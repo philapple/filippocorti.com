@@ -1,0 +1,31 @@
+a {
+  color: #00a071;
+
+  &:hover, &:visited, &:active {
+    color: #00a071;
+  }
+
+}
+
+
+.section-home {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2em;
+
+  aside {
+    margin-left: 0;
+  }
+
+  div {
+    font-size: 1.1em;
+    margin-right: 0;
+
+    p {
+      margin-bottom: 0.5em;
+    }
+
+  }
+
+
+}

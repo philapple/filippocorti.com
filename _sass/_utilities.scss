@@ -5,3 +5,12 @@
 .no-margin-top {
   margin-top: 0;
 }
+
+
+.grayscale {
+  -webkit-filter: grayscale(1);
+
+  &:hover {
+    -webkit-filter: grayscale(0);
+  }
+}
