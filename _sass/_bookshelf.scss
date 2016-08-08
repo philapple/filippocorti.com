@@ -6,14 +6,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  text-align: center;
   margin: 4em auto;
-  
+  max-width: 45em;
+
   .book {
     width: 150px;
 
     .book__cover {
-      max-height: 150px;
+      max-height: 180px;
+      margin: 0;
       margin-bottom: 1em;
     }
 
