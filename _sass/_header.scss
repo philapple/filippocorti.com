@@ -35,13 +35,13 @@
     margin-right: 0;
   }
 
-  a {
+  &.header__nav a {
     font-family: "Nitti Grotesk Medium";
     font-size: 0.9em;
     letter-spacing: 0.05em;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 0 0.9em;
+    margin: 0 0.8em;
 
     &:visited, &:active {
       color: $light-color;
