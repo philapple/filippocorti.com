@@ -12,6 +12,13 @@ a {
 }
 
 
+.attention-grabber {
+
+  @media screen and (max-width: $small-screen) {
+    padding: 0 1.5em;
+  }
+
+}
 
 
 /*------------------------------------*\
@@ -23,10 +30,20 @@ a {
   align-items: flex-start;
   margin-top: 2em;
 
+  @media screen and (max-width: $small-screen) {
+    flex-direction: column;
+    padding: 0 1.5em;
+  }
+
   .section__title {
     flex: 1;
     margin: 0.3em 6em 0 0;
     border-top: 2px solid #222;
+
+    @media screen and (max-width: $small-screen) {
+      margin-bottom: 1em;
+    }
+
   }
 
   .section__content {

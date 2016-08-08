@@ -11,6 +11,10 @@ $link-color:            #00a071;
 $light-color:           #b1b1b1;
 $background-color:      #fcfcfc;
 
+// Screen sizes
+$small-screen:          667px;
+
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "gutenberg",
