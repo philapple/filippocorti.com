@@ -6,7 +6,7 @@ $edit-mode: true; // [ true / false ] - Enables/disables the grid toggle button.
 // Theme / Fonts
 $theme: custom; // [ Merriweather / OpenSans / custom ]
 $custom-font-body: "Nitti Grotesk"; // [ "Libre Baskerville", Georgia, serif ]
-$custom-font-headings: "Nitti Grotesk Medium" !default;
+$custom-font-headings: null !default;
 
 // Paragraph indenting
 $paragraph-indent: false; // [ true / false ]

@@ -19,14 +19,14 @@
     }
 
     .book__title {
-      font-family: "Nitti Grotesk Medium";
+      font-weight: 600;
       display: block;
       margin: 0;
       line-height: 1;
     }
 
     .book__author {
-      font-family: "Nitti Grotesk Light";
+      font-weight: 300;
       font-style: normal;
       font-size: 0.8em;
       color: $light-color;

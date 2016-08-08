@@ -26,3 +26,6 @@ collections:
       path: "library"
     values:
       layout: bookshelf
+
+gems:
+  - octopress-autoprefixer
