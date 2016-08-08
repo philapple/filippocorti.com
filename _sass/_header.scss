@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .site-header {
-  background: #fcfcfc;
+  background: $background-color;
   padding: 1em 0;
   border-bottom: 1px solid #fafafa;
   margin-bottom: 2em;
@@ -44,12 +44,12 @@
     margin: 0 0.9em;
 
     &:visited, &:active {
-      color: #b1b1b1;
+      color: $light-color;
     }
 
     &:hover, &.active {
-      color: #fc4b00;
-      border-bottom: 1px solid #fc4b00;
+      color: $accent-color;
+      border-bottom: 1px solid $accent-color;
 
     }
 

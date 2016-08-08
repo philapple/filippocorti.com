@@ -4,6 +4,13 @@
 @charset "utf-8";
 
 
+// Colour scheme
+$main-text-color:       #424242;
+$accent-color:          #fc4b00;
+$link-color:            #00a071;
+$light-color:           #b1b1b1;
+$background-color:      #fcfcfc;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "gutenberg",

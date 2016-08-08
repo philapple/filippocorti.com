@@ -3,10 +3,10 @@
 \*------------------------------------*/
 
 a {
-  color: #00a071;
+  color: $link-color;
 
-  &:hover, &:visited, &:active {
-    color: #00a071;
+  &:visited, &:active {
+    color: $link-color;
   }
 
 }
@@ -24,21 +24,27 @@ a {
   margin-top: 2em;
 
   .section__title {
-    margin-left: 0;
+    flex: 1;
+    margin: 0.3em 6em 0 0;
     border-top: 2px solid #222;
   }
 
   .section__content {
     font-size: 1.2em;
     font-family: "Nitti Grotesk Light";
-    margin-right: 0;
+    margin: auto 0 0 auto;
+    flex: 6;
+
+    a, strong {
+      font-family: "Nitti Grotesk Medium";
+    }
 
     p {
       margin-bottom: 0.5em;
 
       &:before { /* decoration p items */
         content: "+";
-        color: #b1b1b1;
+        color: $light-color;
         margin-right: 7px;
         font-size: 0.8em;
         position: relative;
