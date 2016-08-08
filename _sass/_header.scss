@@ -1,55 +1,53 @@
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
 .site-header {
-  padding: 1em 0;
-  margin-bottom: 2em;
-  text-transform: uppercase;
   background: #fcfcfc;
+  padding: 1em 0;
   border-bottom: 1px solid #fafafa;
-  max-width: 100%;
+  margin-bottom: 2em;
+  max-width: 100%; /* reset max-width */
 
   .avatar {
     max-width: 3em;
   }
 
   .wrapper {
-    max-width: 35em;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
+    max-width: 35em; /* to center it and make it as wide as main body */
     margin-bottom: 0;
   }
 
 }
-
-
-
-/*------------------------------------*\
-  #HEADER
-\*------------------------------------*/
-
 
 .header__section {
   display: flex;
   align-items: center;
   margin-bottom: 0;
 
-  &:first-child {
+  &:first-child { /* left section header */
     margin-left: 0;
   }
 
-  &:last-child {
+  &:last-child { /* right section header */
     margin-right: 0;
   }
 
   a {
-    margin: 0 0.9em;
-    font-family: "Nitti Grotesk";
-    text-decoration: none;
+    font-family: "Nitti Grotesk Medium";
     font-size: 0.9em;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 0.9em;
 
     &:visited, &:active {
       color: #b1b1b1;
     }
 
-    &:hover {
+    &:hover, &.active {
       color: #fc4b00;
       border-bottom: 1px solid #fc4b00;
 

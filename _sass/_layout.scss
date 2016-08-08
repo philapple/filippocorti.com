@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #COMMON
+\*------------------------------------*/
+
 a {
   color: #00a071;
 
@@ -8,24 +12,39 @@ a {
 }
 
 
-.section-home {
+
+
+/*------------------------------------*\
+  #HOME
+\*------------------------------------*/
+
+.section-list {
   display: flex;
   align-items: flex-start;
   margin-top: 2em;
 
-  aside {
+  .section__title {
     margin-left: 0;
+    border-top: 2px solid #222;
   }
 
-  div {
-    font-size: 1.1em;
+  .section__content {
+    font-size: 1.2em;
+    font-family: "Nitti Grotesk Light";
     margin-right: 0;
 
     p {
       margin-bottom: 0.5em;
+
+      &:before { /* decoration p items */
+        content: "+";
+        color: #b1b1b1;
+        margin-right: 7px;
+        font-size: 0.8em;
+        position: relative;
+        top: -2px;
+      }
+
     }
-
   }
-
-
 }
