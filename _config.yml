@@ -18,3 +18,11 @@ github_username:  philapple
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  bookshelf:
+    defaults:
+      path: "library"
+    values:
+      layout: bookshelf

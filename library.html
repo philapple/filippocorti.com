@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<h2 class="no-margin-top">My Library</h2>
+<p>
+  A collection of some of my favourite books.
+  I just started collecting them in this page, so it will be growing in the coming months.
+  For what I am reading in this moment, check my
+  <a href="http://goodreads.com/user/show/4464224-filippo-corti">goodreads profile</a>.
+</p>
+
+<section class="library">
+
+  {% for book in site.bookshelf %}
+
+  <div class="book">
+
+    <a href="https://www.amazon.it/s/ref=nb_sb_noss?field-keywords={{ book.title }} {{ book.author }}">
+      <img src="{{ book.cover }}" alt="{{ book.title }}" class="book__cover"/>
+    </a>
+    <b class="book__title">{{ book.title }}</b>
+    <em class="book__author">{{ book.author }}</em>
+
+  </div>
+
+  {% endfor %}
+
+</section>
