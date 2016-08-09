@@ -29,3 +29,10 @@ collections:
 
 gems:
   - octopress-autoprefixer
+
+# Header nav
+navigation:
+- text: Bookshelf
+  url: /library
+- text: Blog
+  url: http://bicyclemind.it

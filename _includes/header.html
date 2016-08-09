@@ -9,8 +9,15 @@
     </div>
 
     <nav class="header__section header__nav">
-      <a href="/library">bookshelf</a>
-      <a href="http://bicyclemind.it">blog</a>
+
+      {% assign url = page.url|remove:'.html' %}
+
+      {% for link in site.navigation %}
+
+      <a {% if url == link.url %}class="active"{% endif %} href="{{link.url}}">{{link.text}}</a>
+
+      {% endfor %}
+
     </nav>
 
   </div>
