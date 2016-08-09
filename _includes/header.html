@@ -4,18 +4,15 @@
 
     <div class="header__section">
       <a href="/" class="no-margin">
-        <img src="assets/filippo/avatar_bg_white_small.png" class="avatar hvr-wobble-horizontal no-margin">
+        <img src="{{site.url}}/assets/filippo/avatar_bg_white_small.png" class="avatar hvr-wobble-horizontal no-margin">
       </a>
     </div>
 
     <nav class="header__section header__nav">
 
       {% assign url = page.url|remove:'.html' %}
-
       {% for link in site.navigation %}
-
-      <a {% if url == link.url %}class="active"{% endif %} href="{{link.url}}">{{link.text}}</a>
-
+        <a {% if url == link.url %}class="active"{% endif %} href="{{link.url}}">{{link.text}}</a>
       {% endfor %}
 
     </nav>

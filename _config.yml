@@ -21,11 +21,7 @@ markdown: kramdown
 
 # Collections
 collections:
-  bookshelf:
-    defaults:
-      path: "library"
-    values:
-      layout: bookshelf
+  - bookshelf
 
 gems:
   - octopress-autoprefixer
