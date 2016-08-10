@@ -14,7 +14,7 @@ a {
 
 .attention-grabber, .content-library {
 
-  @media screen and (max-width: $small-screen) {
+  @include media-query($small-screen) {
     padding: 0 1.5em;
   }
 
@@ -27,9 +27,9 @@ a {
 .section-list {
   display: flex;
   align-items: flex-start;
-  margin-top: 2em;
+  margin-top: $spacing-unit;
 
-  @media screen and (max-width: $small-screen) {
+  @include media-query($small-screen) {
     flex-direction: column;
     padding: 0 1.5em;
   }
@@ -39,7 +39,7 @@ a {
     margin: 0.3em 6em 0 0;
     border-top: 2px solid #222;
 
-    @media screen and (max-width: $small-screen) {
+    @include media-query($small-screen) {
       margin-bottom: 1em;
     }
 
@@ -51,7 +51,7 @@ a {
     margin: auto 0 0 auto;
     flex: 6;
 
-    @media screen and (max-width: $small-screen) {
+    @include media-query($small-screen) {
       margin: 0;
     }
 
@@ -70,7 +70,7 @@ a {
         position: relative;
         top: -2px;
 
-        @media screen and (max-width: $small-screen) {
+        @include media-query($small-screen) {
           display: none;
         }
 

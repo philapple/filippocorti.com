@@ -5,7 +5,7 @@
 .library {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin: 4em auto;
   max-width: 45em;
 
@@ -13,7 +13,7 @@
     width: 150px;
 
     .book__cover {
-      max-height: 180px;
+      max-height: 190px;
       margin: 0;
       margin-bottom: 1em;
     }

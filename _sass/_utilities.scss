@@ -14,3 +14,16 @@
     -webkit-filter: grayscale(0);
   }
 }
+
+
+.full-screen {
+  max-width: 100%;
+}
+
+
+// Mixins 
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}

@@ -14,18 +14,20 @@ $background-color:      #f7f7f7;
 // Screen sizes
 $small-screen:          667px;
 
-// Fonts
+// Utilities
+$spacing-unit:          30px;
 
+// Fonts
 $primary-font:         "Nitti Grotesk", "Helvetica Neue", "Helvetica", sans-serif;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "gutenberg",
+        "utilities",
         "layout",
         "header",
         "animations",
         "bookshelf",
-        "footer",
-        "utilities"
+        "footer"
 ;
