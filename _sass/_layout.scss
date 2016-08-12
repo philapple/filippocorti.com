@@ -15,10 +15,13 @@ a {
 .attention-grabber, .content-library {
 
   @include media-query($small-screen) {
-    padding: 0 1.5em;
+    padding: 0 $mobile-margin;
   }
 
 }
+
+
+
 
 /*------------------------------------*\
   #HOME
@@ -31,7 +34,7 @@ a {
 
   @include media-query($small-screen) {
     flex-direction: column;
-    padding: 0 1.5em;
+    padding: 0 $mobile-margin;
   }
 
   .section__title {
@@ -46,10 +49,9 @@ a {
   }
 
   .section__content {
-    font-size: 1.2em;
     font-weight: 300;
     margin: auto 0 0 auto;
-    flex: 6;
+    flex: 3;
 
     @include media-query($small-screen) {
       margin: 0;
@@ -60,7 +62,7 @@ a {
     }
 
     p {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.4em;
 
       &:before { /* decoration p items */
         content: "+";

@@ -6,6 +6,10 @@
   margin-top: 0;
 }
 
+.text-semibold {
+  font-weight: 600;
+}
+
 
 .grayscale {
   -webkit-filter: grayscale(1);
@@ -21,7 +25,7 @@
 }
 
 
-// Mixins 
+// Mixins
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
