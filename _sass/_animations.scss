@@ -10,6 +10,9 @@
   animation-iteration-count: infinite;
 }
 
+
+
+
 /* Wobble Horizontal */
 @-webkit-keyframes hvr-wobble-horizontal {
   16.65% {
@@ -98,7 +101,8 @@
 
 
 
-// Shake animation
+
+/* Shake animation */
 @-webkit-keyframes shake {
   from, to {
     -webkit-transform: translate3d(0, 0, 0);
@@ -166,6 +170,10 @@
     100% { opacity:1; }
 }
 
+
+
+
+/* FadeIn */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
