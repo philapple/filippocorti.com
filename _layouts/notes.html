@@ -1,21 +1,10 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<article itemscope itemtype="http://schema.org/BlogPosting" class="notes">
+  <h1 itemprop="name headline">{{ page.title }}</h1>
 
-  <hgroup class="align-center">
-    <h1 itemprop="name headline">{{ page.title }}</h1>
-    <h6>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} •
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">
-          {{ page.author }}
-        </span></span>
-        {% endif %}
-      </h6>
-  </hgroup>
-
-  <div itemprop="articleBody">
+  <div itemprop="articleBody" class="article-body">
     {{ content }}
   </div>
 
