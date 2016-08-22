@@ -13,17 +13,16 @@ id: library
 
 <section class="library">
 
-  {% for book in site.bookshelf %}
+  {% for book in site.data.books %}
+  
+    <div class="book">
+      <a href="https://www.amazon.it/s/ref=nb_sb_noss?field-keywords={{ book.title }} {{ book.author }}">
+        <img src="{{ site.url }}/assets/library/{{ book.cover }}" alt="{{ book.title }}" class="book__cover fadeIn animated"/>
+      </a>
+      <b class="book__title">{{ book.title }}</b>
+      <em class="book__author">{{ book.author }}</em>
 
-  <div class="book">
-
-    <a href="https://www.amazon.it/s/ref=nb_sb_noss?field-keywords={{ book.title }} {{ book.author }}">
-      <img src="{{ site.url }}/{{ book.cover }}" alt="{{ book.title }}" class="book__cover fadeIn animated"/>
-    </a>
-    <b class="book__title">{{ book.title }}</b>
-    <em class="book__author">{{ book.author }}</em>
-
-  </div>
+    </div>
 
   {% endfor %}
 

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Filippo Corti | CV
+id: cv
+---
+
+<section class="section-list">
+
+  <aside class="section__title">
+    <h3 class="no-margin text-semibold">work</h3>
+  </aside>
+
+  <div class="section__content">
+
+    {% for work in site.data.cv["work"] %}
+
+    <p>
+      {{ work.year }}: <b>{{ work.position }}</b> at {{ work.company }} <br/>
+      {{ work.location }}
+    </p>
+
+    {% endfor %}
+
+
+
+  </div>
+
+</section>

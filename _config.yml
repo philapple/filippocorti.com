@@ -19,10 +19,6 @@ github_username:  philapple
 # Build settings
 markdown: kramdown
 
-# Collections
-collections:
-  - bookshelf
-
 gems:
   - octopress-autoprefixer
 

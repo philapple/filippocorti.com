@@ -1,0 +1,35 @@
+---
+
+work:
+  - position: UX Designer
+    company: Klood
+    location: Pisa, Italy
+    year: 2015 — current
+
+  - position: Web Developer
+    company: CNR (National Research Centre)
+    location: Pisa, Italy
+    year: 2013 — 2014
+
+  - position: Tech Writer
+    company: Play Media Company
+    location: Milan, Italy
+    year: 2012
+
+  - position: Blogger
+    company: Blogo
+    location: Milan
+    year: 2011
+
+education:
+  - degree: MA in Digital Humanities
+    university: King’s College London
+    year: 2014 — 2016
+
+  - degree: BA in Digital Humanities
+    university: University of Pisa
+    year: 2010 — 2014
+
+skills:
+  - type: 
+    description:

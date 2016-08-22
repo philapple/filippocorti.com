@@ -1,9 +1,0 @@
----
-layout:         bookshelf
-title:          "1984"
-author:         "George Orwell"
-cover:          "assets/library/1984.jpeg"
-published:      "1950"
-rating:         "*****"
-category:       fiction essential
----
