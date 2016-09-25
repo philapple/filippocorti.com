@@ -26,5 +26,7 @@ gems:
 navigation:
 - text: Bookshelf
   url: /library
+- text: Work
+  url: /work
 - text: Blog
   url: http://bicyclemind.it

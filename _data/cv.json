@@ -1,0 +1,149 @@
+{
+  "basics": {
+    "name": "Filippo Corti",
+    "label": "UX Designer",
+    "picture": "",
+    "email": "me@filippocorti.net",
+    "phone": "",
+    "website": "http://filippocorti.com",
+    "summary": "",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "London",
+      "countryCode": "UK",
+      "region": "England"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "philapple",
+        "url": ""
+      },
+      {
+        "network": "Medium",
+        "username": "philapple",
+        "url": "https://medium.com/@philapple"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Klood",
+      "position": "UX Designer",
+      "website": "http://radar.klood.com",
+      "startDate": "2015-05",
+      "endDate": "Current",
+      "summary": "Responsible for the UX and design of the Klood app. Working mainly with static mockups (Sketch and InvisionApp) — sometimes editing the front-end to fix misaligned icons",
+      "highlights": []
+    },
+    {
+      "company": "Freelance",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2012",
+      "endDate": "Current",
+      "summary": "Web design, content managment and development for small shops, B&B and individuals. Frequently in WordPress or Jekyll",
+      "highlights": []
+    },
+    {
+      "company": "CNR (IIT Pisa)",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "12-2014",
+      "endDate": "06-2014",
+      "summary": "Internship as a front-end web developer. Worked on a “digital storytelling” project with one of the main publisher in Italy, “Gruppo Digitale l’Espresso”, towards creating an interactive piece of journalism",
+      "highlights": []
+    },
+    {
+      "company": "Play Media Company",
+      "position": "Tech Writer",
+      "website": "",
+      "startDate": "2012",
+      "endDate": "",
+      "summary": "Written reviews, tutorials and opinion articles for two tech magazines published by this editor",
+      "highlights": []
+    },
+    {
+      "company": "Blogo.it",
+      "position": "Blogger",
+      "website": "",
+      "startDate": "2011",
+      "endDate": "",
+      "summary": "Paid tech blogger for (what was) the biggest Italian blog network",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "King's College London",
+      "area": "Digital Humanities",
+      "studyType": "Master",
+      "startDate": "2014",
+      "endDate": "2016",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "University of Pisa",
+      "area": "Digital Humanities",
+      "studyType": "Bachelor",
+      "startDate": "2010",
+      "endDate": "2014",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": [
+        "HTML5",
+        "Web Design",
+        "JavaScript",
+        "CSS3",
+        "WordPress",
+        "jQuery",
+        "Jekyll"
+      ]
+    },
+    {
+      "name": "UX",
+      "level": "",
+      "keywords": [
+        "Sketch",
+        "Framer.js"
+      ]
+    },
+    {
+      "name": "Blogging",
+      "level": ""
+     },
+    {
+      "name": "Content Managment",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "IELTS Level 8"
+    },
+    {
+      "language": "Italian",
+      "fluency": "Native Language"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Blogging",
+      "keywords": []
+    }
+  ],
+  "references": []
+}

@@ -1,3 +1,4 @@
+// Margins and divs
 .no-margin {
   margin: 0;
 }
@@ -6,18 +7,36 @@
   margin-top: 0;
 }
 
-.text-semibold {
+.flexbox {
+  display: flex;
+}
+
+.full-screen {
+  max-width: 100%;
+}
+
+
+
+// Typographic utilities
+.text-semibold, .text-bold {
   font-weight: 600;
+}
+
+.text-light {
+  font-weight: 300;
 }
 
 .text-regular {
   font-weight: 400;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .text-center {
   text-align: center;
 }
-
 
 .grayscale {
   -webkit-filter: grayscale(1);
@@ -27,12 +46,11 @@
   }
 }
 
+
+
+// Behaviour
 .force-select-all {
   user-select: all;
-}
-
-.full-screen {
-  max-width: 100%;
 }
 
 

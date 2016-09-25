@@ -5,11 +5,12 @@
 
 
 // Colour scheme
-$main-text-color:       #424242;
-$accent-color:          #fc4b00;
-$link-color:            #00a071;
-$light-color:           #b1b1b1;
-$background-color:      #f7f7f7;
+$main-text-color:         #424242;
+$secondary-text-color:    #2b00cf;
+$accent-color:            #2b00cf;
+$link-color:              #00a071;
+$light-color:             #b1b1b1;
+$background-color:        #f7f7f7;
 
 // Screen sizes
 $small-screen:          667px;
@@ -20,15 +21,17 @@ $mobile-margin:         1.5em;
 
 // Fonts
 $primary-font:         "Nitti Grotesk", "Helvetica Neue", "Helvetica", sans-serif;
-
+$secondary-font:       "Input Mono";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "gutenberg",
         "utilities",
+        "atoms",
         "layout",
         "header",
         "animations",
         "bookshelf",
+        "work",
         "footer"
 ;
