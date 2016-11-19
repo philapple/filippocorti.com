@@ -41,8 +41,35 @@
     letter-spacing: 0.05em;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 0 0.8em;
+    margin: 0 0.5em;
     color: $light-color;
+
+    /* Animation on :hover */
+    &::before, &::after {
+      display: inline-block;
+    	opacity: 0;
+    	transition: transform 0.3s, opacity 0.2s;
+    }
+
+    &::before {
+    margin-right: 10px;
+    content: '[';
+    transform: translateX(20px);
+    }
+
+    &::after {
+      margin-left: 10px;
+    	content: ']';
+    	transform: translateX(-20px);
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+    	opacity: 1;
+    	transform: translateX(0px);
+    }
 
     &:visited, &:active {
       color: $light-color;
@@ -50,8 +77,6 @@
 
     &:hover, &.active {
       color: $accent-color;
-      border-bottom: 1px solid $accent-color;
-
     }
 
   }

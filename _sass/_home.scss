@@ -1,0 +1,82 @@
+/*------------------------------------*\
+  #HOME
+\*------------------------------------*/
+
+.page-home {
+
+  figure {
+    max-width: 70%;
+  }
+
+  .icon {
+    margin-left: 5px;
+    position: relative;
+    top: 5px;
+  }
+
+    #instafeed {
+      display: flex;
+      flex-flow: wrap;
+      margin: 5em auto;
+
+      a {
+        margin: 0 0.3em 0.3em 0;
+        display: inline-block;
+        overflow: hidden;
+
+      }
+
+      img {
+        max-width: 100px;
+        margin: 0;
+        transition: all .2s ease;
+        vertical-align: middle;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+
+  .section-list {
+    display: flex;
+    align-items: flex-start;
+    margin-top: $spacing-unit;
+
+    @include media-query($small-screen) {
+      flex-direction: column;
+      padding: 0 $mobile-margin;
+    }
+
+    .section__title {
+      width: 20%;
+      margin: 0.3em 6em 0 2em;
+      border-top: 2px solid #222;
+      text-align: right;
+
+      @include media-query($small-screen) {
+        margin-bottom: 1em;
+      }
+
+    }
+
+    .section__content {
+      font-weight: 300;
+      margin: auto 0 0 auto;
+      width: 80%;
+
+      @include media-query($small-screen) {
+        margin: 0;
+      }
+
+      a, strong {
+        font-weight: 600;
+      }
+
+      p {
+        margin-bottom: 0.4em;
+      }
+      
+    }
+  }
+}
