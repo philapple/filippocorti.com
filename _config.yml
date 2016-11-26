@@ -24,9 +24,11 @@ gems:
 
 # Header nav
 navigation:
+- text: About
+  url: /about
 - text: Bookshelf
   url: /library
-- text: Work
+- text: CV
   url: /work
 - text: Blog
   url: http://bicyclemind.it

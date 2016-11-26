@@ -36,12 +36,10 @@
   }
 
   &.header__nav a {
-    font-weight: 600;
     font-size: 0.8em;
-    letter-spacing: 0.05em;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 0 0.5em;
+    margin: 0 0.1em;
     color: $light-color;
 
     /* Animation on :hover */
