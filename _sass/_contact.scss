@@ -1,0 +1,55 @@
+#chat {
+
+  // the following is a massive hack to change the style of the conversational form script
+  min-height: 600px;
+  margin-top: 80px;
+
+  // message bubbles
+  text, cf-radio-button {
+    font-family: $secondary-font;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: $link-color;
+    border: 1px solid $link-color;
+    background: transparent;
+  }
+
+  // replies
+  cf-chat-response:nth-of-type(2n+2) text {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+
+  cf-radio-button {
+    padding-bottom: 0;
+    padding-top: 2em;
+  }
+
+  // makes conversation larger
+  cf-chat {
+    transform: scale(1.2);
+    position: relative;
+    top: -50px;
+  }
+
+  cf-input input {
+    border-radius: 3px;
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    font-family: Nitti Grotesk;
+    font-size: 1.6em;
+    box-shadow: none;
+  }
+
+  // send btn
+  cf-input-button svg g g polygon {
+    fill: $accent-color;
+  }
+
+
+}
+
+// hides normal form
+#contact-form {
+  visibility: hidden;
+}
