@@ -3,8 +3,12 @@
 \*------------------------------------*/
 
 .footer {
-  margin-top: 4em;
+  margin: $spacing-unit*2 auto 0;
+  padding: $spacing-unit*2 0;
   width: 100%;
   max-width: 100%;
-
+  text-align: center;
+  background: $background-color;
+  color: $grey-900;
+  font-size: 2em;
 }

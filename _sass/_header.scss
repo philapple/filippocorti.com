@@ -4,8 +4,8 @@
 
 .site-header {
   background: $background-color;
-  padding: 1em 0;
-  margin-bottom: 2em;
+  padding: $spacing-unit 0;
+  margin-bottom: $spacing-unit*2;
   max-width: 100%; /* reset max-width */
   font-family:  $secondary-font;
 
@@ -17,7 +17,6 @@
     display: flex;
     justify-content: space-around;
     max-width: 35em; /* to center it and make it as wide as main body */
-    margin-bottom: 0;
   }
 
 }
@@ -36,7 +35,7 @@
   }
 
   &.header__nav a {
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-decoration: none;
     text-transform: uppercase;
     margin: 0 0.1em;

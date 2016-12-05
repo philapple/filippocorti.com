@@ -5,3 +5,9 @@ $(document).ready(function() {
 	});
 
 });
+
+new cf.ConversationalForm({
+    formEl: document.getElementById("contact-form"),
+		context: document.getElementById("chat"),
+    userImage: "../assets/icons/face.png"
+});
