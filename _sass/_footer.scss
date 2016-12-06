@@ -3,12 +3,27 @@
 \*------------------------------------*/
 
 .footer {
-  margin: $spacing-unit*2 auto 0;
-  padding: $spacing-unit*2 0;
+  margin: $spacing-unit*4 auto 0;
+  padding: 0 $spacing-unit*2 0.5em;
   width: 100%;
   max-width: 100%;
   text-align: center;
-  background: $background-color;
+  background: #e9e5fa;
   color: $grey-900;
-  font-size: 2em;
+
+  .icon-macintosh {
+    font-size: 2em;
+  }
+
+  p {
+    position: relative;
+    top: -15px;
+    color: $accent-color;
+  }
+
+  a {
+    color: $grey-900;
+    color: $accent-color;
+    font-weight: bold;
+  }
 }

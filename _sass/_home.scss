@@ -13,7 +13,7 @@
     padding: $spacing-unit 0;
 
     @include media-query($small-screen) {
-      padding: $spacing-unit;
+      padding: $mobile-margin;
     }
 
   }
@@ -24,11 +24,16 @@
 
   .featured-links {
     text-align: center;
-    margin: 0 0 $spacing-unit;
-    padding: $spacing-unit*2;
+    justify-content: space-between;
+    margin: 0 0 $spacing-unit*2;
+    padding: $spacing-unit $spacing-unit*2;
     display: flex;
     background: $background-color;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    @include media-query($small-screen) {
+      padding: $mobile-margin;
+    }
 
 
     a {
@@ -73,7 +78,7 @@
       text-align: right;
 
       @include media-query($small-screen) {
-        margin: 0 0 $spacing-unit 0;
+        margin: 0 0 $mobile-margin 0;
       }
 
     }

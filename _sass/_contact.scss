@@ -1,8 +1,8 @@
 #chat {
 
   // the following is a massive hack to change the style of the conversational form script
-  min-height: 600px;
-  margin-top: 80px;
+  min-height: 500px;
+  margin-top: 70px;
 
   // message bubbles
   text, cf-radio-button {
@@ -52,4 +52,6 @@
 // hides normal form
 #contact-form {
   visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
 }
