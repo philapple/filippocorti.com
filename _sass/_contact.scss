@@ -1,3 +1,12 @@
+.page-hi .content {
+
+    @include media-query($small-screen) {
+      padding: 0 $mobile-margin;
+    }
+
+}
+
+
 #chat {
 
   // the following is a massive hack to change the style of the conversational form script

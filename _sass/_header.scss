@@ -17,6 +17,11 @@
     display: flex;
     justify-content: space-around;
     max-width: 35em; /* to center it and make it as wide as main body */
+
+    @include media-query($small-screen) {
+      justify-content: space-between;
+      margin: auto $mobile-margin;
+    }
   }
 
 }

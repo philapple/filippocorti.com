@@ -2,6 +2,10 @@
   #COMMON
 \*------------------------------------*/
 
+html {
+  margin: 0;
+}
+
 a {
   color: $link-color;
 
@@ -69,4 +73,9 @@ a {
   top: -125px;
   background: #fff;
   padding: 2em 0;
+
+  @include media-query($small-screen) {
+    padding: 2em $mobile-margin;
+    box-shadow: none;
+  }
 }
