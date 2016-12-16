@@ -24,5 +24,5 @@ gems:
 
 # Header nav
 navigation:
-- text: CV
-  url: /work
+- text: Contact me
+  url: /hi

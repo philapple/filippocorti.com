@@ -17,13 +17,18 @@
   padding: 0.3em 3em;
   font-family: $primary-font;
   font-weight: bold;
-  font-size: 1.35em;
+  font-size: 0.5em;
   box-shadow: -5px -5px 0px 0px $main-text-color;
 
   &:hover {
     cursor: pointer;
-    box-shadow: 5px 5px 0px 0px $link-color;
-    color: $link-color;
-    border-color: $link-color;
+    box-shadow: 5px 5px 0px 0px $accent-color;
+    color: $accent-color;
+    border-color: $accent-color;
   }
+}
+
+.primary-btn--large {
+  @extend .primary-btn;
+  font-size: 1.35em;
 }

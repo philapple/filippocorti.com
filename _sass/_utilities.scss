@@ -1,3 +1,12 @@
+// Mixins
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+
 // Margins and divs
 .no-margin {
   margin: 0;
@@ -21,11 +30,25 @@
 
 .larger {
   max-width: 70%;
+
+  @include media-query($small-screen) {
+    max-width: 100%;
+  }
+
 }
 
 
 
 // Typographic utilities
+
+.font-primary {
+  font-family: $primary-font;
+}
+
+.font-secondary {
+  font-family: $secondary-font;
+}
+
 .text-semibold, .text-bold {
   font-weight: 600;
 }
@@ -46,6 +69,10 @@
   text-align: center;
 }
 
+.text-important {
+  color: $accent-color;
+}
+
 .grayscale {
   filter: grayscale(1);
   transition: all 1s ease;
@@ -60,12 +87,5 @@
 // Behaviour
 .force-select-all {
   user-select: all;
-}
-
-
-// Mixins
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
+  cursor: copy;
 }

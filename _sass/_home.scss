@@ -18,10 +18,6 @@
 
   }
 
-  figure {
-    max-width: $larger;
-  }
-
   .featured-links {
     text-align: center;
     justify-content: space-between;
@@ -41,11 +37,15 @@
       color: $main-text-color;
       transition: all .2s ease-in-out;
 
-      &:hover {
-        transform: scale(1.2);
-        color: $accent-color;
+      path, polygon {
+        fill: $main-text-color;
+      }
 
-        path {
+      &:visited:hover, &:hover {
+        transform: scale(1.2);
+        background: none;
+
+        path, polygon {
           fill: $accent-color;
         }
       }
@@ -56,7 +56,7 @@
     }
 
     svg {
-      height: 30px;
+      height: 60px;
       margin-bottom: 0;
     }
   }

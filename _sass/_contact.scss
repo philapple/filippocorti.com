@@ -1,66 +1,69 @@
-.page-hi .content {
-
-    @include media-query($small-screen) {
-      padding: 0 $mobile-margin;
-    }
-
-}
-
-
-#chat {
-
-  // the following is a massive hack to change the style of the conversational form script
-  min-height: 500px;
-  margin-top: 70px;
-
-  // message bubbles
-  text, cf-radio-button {
-    font-family: $secondary-font;
-    font-size: 1.1em;
-    line-height: 1.5;
-    color: $link-color;
-    border: 1px solid $link-color;
-    background: transparent;
-  }
-
-  // replies
-  cf-chat-response:nth-of-type(2n+2) text {
-    color: $accent-color;
-    border: 1px solid $accent-color;
-  }
-
-  cf-radio-button {
-    padding-bottom: 0;
-    padding-top: 2em;
-  }
-
-  // makes conversation larger
-  cf-chat {
-    transform: scale(1.2);
-    position: relative;
-    top: -50px;
-  }
-
-  cf-input input {
-    border-radius: 3px;
-    color: $accent-color;
-    border: 1px solid $accent-color;
-    font-family: Nitti Grotesk;
-    font-size: 1.6em;
-    box-shadow: none;
-  }
-
-  // send btn
-  cf-input-button svg g g polygon {
-    fill: $accent-color;
-  }
-
-
-}
-
-// hides normal form
 #contact-form {
-  visibility: hidden;
-  max-height: 0;
-  overflow: hidden;
+  border: 2px solid $accent-color;
+  padding: 0;
+  font-family: $primary-font;
+  color: $accent-color;
+  box-shadow: -20px -20px 0px 0px #e9e5fa;
+  margin: $spacing-unit*2 auto;
+
+
+  ::-webkit-input-placeholder {
+    color: #d4ccf5;
+    font-weight: normal;
+    font-family: $secondary-font;
+    font-size: 0.8em;
+  }
+
+  .sender-info {
+    display: flex;
+  }
+
+  input, textarea {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-bottom: 2px solid $accent-color;
+    padding: 1em;
+    font-size: 1.3em;
+    font-family: $primary-font;
+    font-weight: bold;
+    color: $accent-color;
+
+    &:first-child {
+      border-right: 2px solid $accent-color;
+    }
+  }
+
+  .additional-info input {
+    min-width: 100%;
+
+    &:first-child {
+      border-right: none;
+    }
+  }
+
+  textarea {
+    border: 0;
+    color: $accent-color;
+    min-height: 350px;
+  }
+
+  textarea:focus, input:focus{
+    outline: none;
+}
+
+  .submit-btn {
+    background: $accent-color;
+    padding: 1em 0 0.8em;
+    font-size: 1.2em;
+    display: block;
+    margin: 0;
+    min-width: 100%;
+    border: 0;
+    color: #fff;
+    font-family: $secondary-font;
+    font-weight: normal;
+    cursor: pointer;
+  }
+
 }

@@ -6,51 +6,25 @@ id: hi
 
 <h2 class="no-margin-top">Say Hi 👋</h2>
 <p class="attention-grabber">
-  You can chat with my robotic assistant below here, he will deliver your message to me.
-  Be nice to him. </br>
-  Otherwise, you can just send me an email: <strong class="force-select-all">me@filippocorti.net</strong>
+  You can contact me using the form below, or simply by sending an email to
+  <strong class="force-select-all">me@filippocorti.net</strong>.</p>
+<p class="attention-grabber">
+  Just FYI, I am very slow at replying. I will pretend I was busy. Please do pretend to believe in that.
 </p>
 
-<div id="chat">
-</div>
+<form action="https://formspree.io/me@filippocorti.net" method="POST" id="contact-form" class="larger">
 
+  <div class="sender-info full-screen no-margin-bottom">
+    <input type="text" name="name" id="name" placeholder="Your name *" required>
+    <input type="email" name="_replyto" id="email" placeholder="Your email *" required>
+  </div>
 
-<form action="https://formspree.io/me@filippocorti.net" method="POST" id="contact-form" cf-prevent-autofocus>
+  <div class="additional-info full-screen no-margin-bottom">
+    <input type="text" name="website" id="website" placeholder="Your website/blog/twitter">
+  </div>
 
-    <input type="text" name="intro" cf-questions="Hi 👋 I'm Filippo's personal robot. What are you?">
-
-    <input type="text" name="intro-2" cf-questions="Okay, uhm, so... I'm here to deliver your message.
-    First, though, I need to identify you. You know, find out wheter I'm speaking to someone or just another robot.">
-
-    <input type="text" name="name" cf-questions="It'd be nice if you told me your name">
-
-    <input type="text" name="privacy-alert" cf-questions="Ciao {previous-answer}. Good name there.
-    Okay, so, I need one other small bit of information, without which
-    we can't reply to you!">
-
-    <input type="email" name="_replyto" cf-questions="Your email! Quick, now!">
-
-    <input type="text" name="message" cf-questions="Okay, cool beans 👌 So, what's your message for filippo?">
-
-    <div class="form-group">
-
-      <label for="confirm">Confirm?</label>
-        <div class="radio">
-          <label>
-            <input cf-questions="Okay, beautiful. Do you confirm? Shall I send it?" type="radio" name="confirm" id="confirm-1" value="yep">
-              Yes, send it
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="confirm" id="confirm-2" value="no">
-              No, cancel
-          </label>
-        </div>
-
-    </div>
-
-    <input type="submit" value="Send">
+  <textarea name="message" form="contact-form" placeholder="Your message *" class="full-screen" required></textarea>
+  <input type="hidden" name="_format" value="plain" />
+  <input type="submit" value="Establish contact 🚀" class="submit-btn">
 
 </form>

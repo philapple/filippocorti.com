@@ -10,9 +10,12 @@
 
     <nav class="header__section header__nav">
 
-      {% assign url = page.url|remove:'.html' %}
+      {% if page.url != "/" %}
+        <a href="/" class="home">Home</a>
+      {% endif %}
+
       {% for link in site.navigation %}
-        <a {% if url == link.url %}class="active"{% endif %} href="{{link.url}}">{{link.text}}</a>
+        <a href="{{link.url}}">{{link.text}}</a>
       {% endfor %}
 
     </nav>
