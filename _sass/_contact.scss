@@ -6,6 +6,12 @@
   box-shadow: -20px -20px 0px 0px #e9e5fa;
   margin: $spacing-unit*2 auto;
 
+  @include media-query($small-screen) {
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: -10px -10px 0px 0px #e9e5fa;
+  }
+
 
   ::-webkit-input-placeholder {
     color: #d4ccf5;
@@ -22,6 +28,7 @@
     width: 100%;
     margin: 0;
     border: 0;
+    border-radius: 0;
     border-bottom: 2px solid $accent-color;
     padding: 1em;
     font-size: 1.3em;
@@ -32,6 +39,11 @@
     &:first-child {
       border-right: 2px solid $accent-color;
     }
+
+    @include media-query($small-screen) {
+      font-size: 1em;
+    }
+
   }
 
   .additional-info input {
@@ -57,9 +69,11 @@
     padding: 1em 0 0.8em;
     font-size: 1.2em;
     display: block;
+    appearance: none;
     margin: 0;
     min-width: 100%;
     border: 0;
+    border-radius: 0;
     color: #fff;
     font-family: $secondary-font;
     font-weight: normal;

@@ -5,6 +5,12 @@
   }
 }
 
+.hidden-sm {
+  @include media-query($small-screen) {
+    display: none;
+  }
+}
+
 
 
 // Margins and divs
