@@ -6,8 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 4em auto;
-  max-width: 45em;
+  margin: $spacing-unit*2 auto;
 
   .book {
     width: 150px;
@@ -15,18 +14,21 @@
     .book__cover {
       max-height: 190px;
       margin: 0;
-      margin-bottom: 1em;
+      margin-bottom: $spacing-unit/2;
+
+      @include media-query($small-screen) {
+        max-height: 130px;
+      }
+
     }
 
     .book__title {
-      font-weight: 600;
       display: block;
       margin: 0;
       line-height: 1;
     }
 
     .book__author {
-      font-weight: 300;
       font-style: normal;
       font-size: 0.8em;
       color: $light-color;

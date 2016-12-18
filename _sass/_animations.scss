@@ -1,12 +1,9 @@
 .animated {
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
 .animated.infinite {
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
@@ -16,64 +13,52 @@
 /* Wobble Horizontal */
 @-webkit-keyframes hvr-wobble-horizontal {
   16.65% {
-    -webkit-transform: translateX(8px);
     transform: translateX(8px);
   }
 
   33.3% {
-    -webkit-transform: translateX(-6px);
     transform: translateX(-6px);
   }
 
   49.95% {
-    -webkit-transform: translateX(4px);
     transform: translateX(4px);
   }
 
   66.6% {
-    -webkit-transform: translateX(-2px);
     transform: translateX(-2px);
   }
 
   83.25% {
-    -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
 
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
 
 @keyframes hvr-wobble-horizontal {
   16.65% {
-    -webkit-transform: translateX(8px);
     transform: translateX(8px);
   }
 
   33.3% {
-    -webkit-transform: translateX(-6px);
     transform: translateX(-6px);
   }
 
   49.95% {
-    -webkit-transform: translateX(4px);
     transform: translateX(4px);
   }
 
   66.6% {
-    -webkit-transform: translateX(-2px);
     transform: translateX(-2px);
   }
 
   83.25% {
-    -webkit-transform: translateX(1px);
     transform: translateX(1px);
   }
 
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -81,21 +66,16 @@
 .hvr-wobble-horizontal {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
-  -webkit-animation-name: hvr-wobble-horizontal;
   animation-name: hvr-wobble-horizontal;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
 
@@ -105,40 +85,33 @@
 /* Shake animation */
 @-webkit-keyframes shake {
   from, to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
 
   20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
   }
 }
 
 @keyframes shake {
   from, to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
 
   20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
   }
 }
 
 .shake {
-  -webkit-animation-name: shake;
   animation-name: shake;
 }
 
@@ -146,25 +119,26 @@
 
 
 /* Typing cursor */
-.typed-cursor{
+.typed-cursor {
     opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
     color: $link-color;
     margin-left: 5px;
 }
-@keyframes blink{
+
+@keyframes blink {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
-@-webkit-keyframes blink{
+
+@-webkit-keyframes blink {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
-@-moz-keyframes blink{
+
+@-moz-keyframes blink {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
@@ -195,6 +169,5 @@
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }

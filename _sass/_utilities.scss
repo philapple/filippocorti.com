@@ -22,6 +22,11 @@
   margin-top: 0;
 }
 
+.no-border {
+  border-radius: 0;
+  border: 0;
+}
+
 .no-margin-bottom {
   margin-bottom: 0;
 }
@@ -30,7 +35,7 @@
   display: flex;
 }
 
-.full-screen {
+.full-screen, .full-width {
   max-width: 100%;
 }
 
@@ -82,7 +87,6 @@
 .grayscale {
   filter: grayscale(1);
   transition: all 1s ease;
-
 
   &:hover {
     filter: grayscale(0);

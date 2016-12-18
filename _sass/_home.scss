@@ -36,7 +36,7 @@
       color: $main-text-color;
       transition: all .2s ease-in-out;
 
-      path, polygon {
+      path, polygon, rect {
         fill: $main-text-color;
       }
 
@@ -44,7 +44,7 @@
         transform: scale(1.2);
         background: none;
 
-        path, polygon {
+        path, polygon, rect {
           fill: $accent-color;
         }
       }
@@ -63,7 +63,7 @@
       margin-bottom: 0;
 
       @include media-query($small-screen) {
-        height: 25px;
+        height: 35px;
       }
 
     }

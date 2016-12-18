@@ -20,6 +20,8 @@ a {
 
 }
 
+
+// margins for small-screens
 .home-intro, .content-library, .content-colophon, .content-hi {
 
   @include media-query($small-screen) {
@@ -28,14 +30,19 @@ a {
 
 }
 
+
+// highlight style
 ::-moz-selection { background: rgba(0, 160, 113, 0.2); }
 ::selection { background: rgba(0, 160, 113, 0.2); }
 
 
+// icons
 .icon {
   position: relative;
   top: 2px;
 }
+
+
 
 
 /*------------------------------------*\
@@ -48,72 +55,6 @@ a {
   }
 }
 
-
-
-
-/*------------------------------------*\
-  #404
-\*------------------------------------*/
-
-.page-404 {
-  text-align: center;
-  padding: 6em 0;
-  background: lighten($link-color, 55%);
-  color: #fff;
-  font-size: 2rem;
-  background: $link-color url(https://media.giphy.com/media/hVKWqTEa36rm0/giphy.gif) no-repeat center center fixed;
-  background-size: cover;
-  max-height: 90vh;
-  animation: fadeIn 3s;
-
-  .error-message {
-    transform: rotate(-3deg);
-
-    & > span {
-      padding: 0.15em 0 0.3em;
-      background: rgba(255,255,255,0.1);
-      line-height: 2;
-    }
-
-    .kamojii {
-      font-size: 1.5em;
-      white-space: nowrap;
-      position: relative;
-      top: 5px;
-    }
-
-  }
-
-  .return-link {
-    a {
-      padding: 1em;
-      margin: 1.5em auto;
-      display: block;
-      transition-duration: 1s;
-
-      &:hover {
-        border: 1px solid #fff;
-        color: #fff;
-        background: none;
-      }
-    }
-
-  }
-
-  .avatar {
-    max-width: 2em;
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    filter: grayscale(1);
-    transition-duration: 2s;
-
-    &:hover {
-      filter: grayscale(0);
-    }
-  }
-
-}
 
 
 

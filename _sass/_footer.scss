@@ -6,8 +6,6 @@
   margin: $spacing-unit*4 auto 0;
   padding: 0 $spacing-unit*2 0;
   width: 100%;
-  max-width: 100%;
-  text-align: center;
   background: $light-accent-color;
   font-family: $secondary-font;
   font-size: 0.7em;
@@ -16,7 +14,7 @@
     font-size: 2.5em;
   }
 
-  p {
+  .footer__legal {
     position: relative;
     top: -20px;
     color: $accent-color;

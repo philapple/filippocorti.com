@@ -1,7 +1,28 @@
-<svg width="76px" height="84px" viewBox="0 0 76 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="64px" height="60px" viewBox="0 0 64 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="noun_645343_cc" fill="#000000">
-            <path d="M4.66,0.582 L4.66,8.892 L0.5,8.892 L0.5,83.682 L66.99,83.682 L66.99,79.522 L75.29,79.522 L75.29,0.582 L4.66,0.582 Z M4.66,79.522 L4.66,13.042 L62.83,13.042 L62.83,79.522 L4.66,79.522 Z M71.14,75.372 L66.99,75.372 L66.99,8.892 L8.81,8.892 L8.81,4.732 L71.14,4.732 L71.14,75.372 Z M50.37,33.812 L54.519,33.812 L54.519,58.752 L50.37,58.752 L50.37,62.912 L46.22,62.912 L46.22,54.602 L42.04,54.602 L42.04,50.452 L37.89,50.452 L37.89,46.292 L29.58,46.292 L29.58,42.142 L33.74,42.142 L33.74,33.812 L46.22,33.812 L46.22,37.962 L50.37,37.962 L50.37,33.812 Z M46.22,33.812 L46.22,29.662 L50.37,29.662 L50.37,33.812 L46.22,33.812 Z M46.22,62.912 L46.22,67.062 L21.27,67.062 L21.27,62.912 L17.12,62.912 L17.12,58.752 L12.97,58.752 L12.97,33.812 L17.12,33.812 L17.12,29.662 L21.269,29.662 L21.269,33.812 L29.58,33.812 L29.58,37.962 L25.43,37.962 L25.43,42.142 L21.27,42.142 L21.27,46.292 L17.12,46.292 L17.12,50.452 L29.58,50.452 L29.58,54.602 L25.43,54.602 L25.43,58.752 L29.58,58.752 L29.58,62.912 L46.22,62.912 Z M21.27,29.662 L21.27,25.502 L46.22,25.502 L46.22,29.662 L21.27,29.662 L21.27,29.662 Z" id="Shape"></path>
+        <g id="noun_397382_cc" fill="#000000">
+            <g id="Group">
+                <rect id="Rectangle-path" x="0" y="24" width="4" height="32"></rect>
+                <rect id="Rectangle-path" x="60" y="24" width="4" height="32"></rect>
+                <rect id="Rectangle-path" x="10" y="30" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="14" y="38" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="18" y="30" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="10" y="46" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="26" y="30" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="22" y="38" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="42" y="0" width="4" height="8"></rect>
+                <rect id="Rectangle-path" x="34" y="8" width="8" height="4"></rect>
+                <rect id="Rectangle-path" x="34" y="30" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="30" y="38" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="42" y="30" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="38" y="38" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="46" y="38" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="50" y="30" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="50" y="46" width="4" height="4"></rect>
+                <rect id="Rectangle-path" x="18" y="46" width="28" height="4"></rect>
+                <polygon id="Shape" points="60 24 60 20 34 20 34 12 30 12 30 20 4 20 4 24"></polygon>
+                <rect id="Rectangle-path" x="4" y="56" width="56" height="4"></rect>
+            </g>
         </g>
     </g>
 </svg>

@@ -14,17 +14,17 @@ id: hi
 
 <form action="https://formspree.io/me@filippocorti.net" method="POST" id="contact-form" class="larger">
 
-  <div class="sender-info full-screen no-margin-bottom">
-    <input type="text" name="name" id="name" placeholder="Your name *" required>
-    <input type="email" name="_replyto" id="email" placeholder="Your email *" required>
+  <div class="sender-info full-screen no-margin-bottom flexbox">
+    <input type="text" name="name" id="name" placeholder="Your name *" class="no-border no-margin text-semibold" required>
+    <input type="email" name="_replyto" id="email" placeholder="Your email *" class="no-border no-margin text-semibold" required>
   </div>
 
   <div class="additional-info full-screen no-margin-bottom">
-    <input type="text" name="website" id="website" placeholder="Your website/blog/twitter">
+    <input type="text" name="website" id="website" placeholder="Your website/blog/twitter" class="no-border no-margin text-semibold">
   </div>
 
-  <textarea name="message" form="contact-form" placeholder="Your message *" class="full-screen" required></textarea>
+  <textarea name="message" form="contact-form" placeholder="Your message *" class="full-screen no-border no-margin" required></textarea>
   <input type="hidden" name="_format" value="plain" />
-  <input type="submit" value="Establish contact 🚀" class="submit-btn">
+  <input type="submit" value="Establish contact 🚀" class="submit-btn no-border no-margin">
 
 </form>

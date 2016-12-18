@@ -6,14 +6,17 @@
 
 // Colour scheme
 $main-text-color:         #424242;
-$secondary-text-color:    #2b00cf;
-$accent-color:            #2b00cf;
-$light-accent-color:      #e9e5fa;
 $link-color:              #00a071;
-$light-link-color:        #e7f6f1;
-$light-color:             #b1b1b1;
-$background-color:        #f7f7f7;
+$accent-color:            #2b00cf;
 
+$secondary-text-color:    #2b00cf;
+$light-link-color:        #e7f6f1;
+$light-accent-color:      #e9e5fa;
+
+
+$background-color:        #f7f7f7; // TODO: refactor with Material Design code
+
+$light-color:             #b1b1b1; // TODO: refactor with Material Design code
 $grey-900:                #212121;
 $grey-300:                #E0E0E0;
 
@@ -27,7 +30,7 @@ $larger:                70%;
 
 // Fonts
 $primary-font:         "Nitti Grotesk", "Helvetica Neue", "Helvetica", sans-serif;
-$secondary-font:       "Input Mono";
+$secondary-font:       "Input Mono", "Courier", sans-serif;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -41,5 +44,6 @@ $secondary-font:       "Input Mono";
         "bookshelf",
         "work",
         "home",
+        "error",
         "footer"
 ;
