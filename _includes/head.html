@@ -6,6 +6,8 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  {% include metadata.html %}
+
   <link href="//cloud.webtype.com/css/f915bf03-f9e0-44ec-8ee4-e2be65a9864d.css" rel="stylesheet" type="text/css" />
   <link href="https://file.myfontastic.com/qywfA4ZMUeXpHkQt99X3L5/icons.css" rel="stylesheet">
 
