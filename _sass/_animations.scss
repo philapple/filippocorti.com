@@ -10,6 +10,26 @@
 
 
 
+/* Flickering */
+@keyframes flickering {
+    16.65%   {filter: grayscale(1);}
+    33.3%  {filter: grayscale(.9);}
+    49.95%  {filter: grayscale(.8);}
+    66.6%  {filter: grayscale(.6);}
+    83.25%  {filter: grayscale(.8);}
+    100%   {filter: grayscale(.9);}
+}
+
+.flickering {
+  filter: grayscale(1);
+  animation-name: flickering;
+  @extend .animated.infinite;
+  animation-duration: 2s;
+}
+
+
+
+
 /* Wobble Horizontal */
 @-webkit-keyframes hvr-wobble-horizontal {
   16.65% {

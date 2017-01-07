@@ -1,0 +1,25 @@
+{
+  "name": "filippocorti-com",
+  "homepage": "https://github.com/philapple/filippocorti.com",
+  "authors": [
+    "philapple <me@filippocorti.net>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typed.js": "^1.1.4",
+    "instafeed.js": "^1.4.1",
+    "jquery": "^3.1.1",
+    "d3": "^4.4.0",
+    "textures": "^1.0.4"
+  }
+}
