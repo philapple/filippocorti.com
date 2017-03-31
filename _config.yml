@@ -17,6 +17,8 @@ github_username:  philapple
 
 # Build settings
 markdown: kramdown
+include: [node_modules]
+exclude: []
 
 gems:
   - octopress-autoprefixer
@@ -25,5 +27,3 @@ gems:
 navigation:
 - text: Contact me
   url: /hi
-
-include: ['/bower_components']
