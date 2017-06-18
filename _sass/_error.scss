@@ -14,11 +14,14 @@
   animation: fadeIn 3s;
 
   .error-message {
-    transform: rotate(-3deg);
+    position: absolute;
+    top: 120px;
+    left: 0;
+    text-align: left;
 
     & > span {
-      padding: 0.15em 0 0.3em;
-      background: rgba(255,255,255,0.1);
+      padding: 0.3em 0.5em 0.3em;
+      background: $link-color;
       line-height: 2;
     }
 
@@ -32,15 +35,20 @@
   }
 
   .return-link {
+    position: absolute;
+    top: -65px;
+    left: 100px;
+    text-align: left;
+
     a {
       padding: 1em;
       margin: 1.5em auto;
       display: block;
       transition-duration: 1s;
+      color: white;
+
 
       &:hover {
-        border: 1px solid #fff;
-        color: #fff;
         background: none;
       }
     }

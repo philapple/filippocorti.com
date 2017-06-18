@@ -5,7 +5,7 @@
     "picture": "",
     "email": "me@filippocorti.net",
     "phone": "",
-    "website": "http://filippocorti.com",
+    "website": "http://filippocorti.net",
     "summary": "",
     "location": {
       "address": "",
@@ -30,11 +30,11 @@
   "work": [
     {
       "company": "Klood",
-      "position": "UX Designer",
+      "position": "UX and UI Designer",
       "website": "http://radar.klood.com",
       "startDate": "2015-05",
       "endDate": "Current",
-      "summary": "Responsible for the UX and design of the Klood app. Working mainly with static mockups (Sketch and InvisionApp) — sometimes editing the front-end to fix misaligned icons",
+      "summary": "Responsible for the overall UX of the app, from mockups to final designs.",
       "highlights": []
     },
     {
@@ -133,6 +133,10 @@
     {
       "language": "English",
       "fluency": "IELTS Level 8"
+    },
+    {
+      "language": "Chinese (Mandarin)",
+      "fluency": "Basic, learning"
     },
     {
       "language": "Italian",

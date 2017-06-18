@@ -24,6 +24,7 @@
     margin: 0 0 $spacing-unit*2;
     padding: $spacing-unit $spacing-unit*2;
     display: flex;
+    flex-wrap: wrap;
     background: $background-color;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
@@ -32,9 +33,12 @@
     }
 
     a {
+      width: 150px;
+      height: 120px;
       text-decoration: none;
       color: $main-text-color;
       transition: all .2s ease-in-out;
+      font-family: $secondary-font;
 
       path, polygon, rect {
         fill: $main-text-color;
@@ -52,15 +56,12 @@
 
     .featured-links__title {
       display: block;
-
-      @include media-query($small-screen) {
-        font-size: 0.85em;
-      }
+      margin-bottom: -10px;
     }
 
     svg {
-      height: 60px;
-      margin-bottom: 0;
+      height: 40px;
+      margin-bottom: 5px;
 
       @include media-query($small-screen) {
         height: 35px;
@@ -92,20 +93,29 @@
     }
 
     .section-list__content {
-      font-weight: 300;
       margin: auto 0 0 auto;
       width: 80%;
+      font-size: 1.2em;
+      font-weight: 300;
 
       @include media-query($small-screen) {
         margin: 0;
       }
 
-      a, strong {
-        font-weight: 600;
+      a {
+        color: $main-text-color;
+        text-decoration: none;
+        border-bottom: 2px solid $light-link-color;
+        padding: 2px 0;
+
+        &:hover {
+          border-bottom: 3px solid $accent-color;
+          background: $light-accent-color;
+        }
       }
 
       p {
-        margin-bottom: 0.4em;
+        margin-bottom: 1em;
       }
 
     }
@@ -115,7 +125,7 @@
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    margin: 5em auto;
+    margin: 4em auto;
     max-width: 45em;
 
     @include media-query($small-screen) {

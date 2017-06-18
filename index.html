@@ -9,11 +9,10 @@ id: home
     <span class="typed"></span>
   </h2>
 
-  <p class="attention-grabber">
-    Scrive di Apple, internet e altri
-    argomenti noiosi su <a href="http://bicyclemind.it"><strong>Bicycle Mind</strong></a>.
-    Mette le cose che ha letto e che ha trovato interessanti su un blog
-    che ha chiamato <a href="http://blog.filippo.me"><strong>Orpolina!</strong></a>
+  <p class="attention-grabber no-margin-bottom">
+    Blogger, UX designer, developer from Italy.
+    Been writing a blog about technology since 2005, it's called <a href="">Bicycle Mind</a>.
+    Currently works from London as the UX Designer of a small startup.
   </p>
 
 </div>
@@ -24,42 +23,29 @@ id: home
 
     <a href="{{link.url}}">
       {% include {{link.icon}} %}
-      <strong class="featured-links__title">{{ link.sectiontitle }}</strong>
+      <strong class="featured-links__title no-margin-bottom">{{ link.sectiontitle }}</strong>
+      <small class="text-secondary text-uppercase">{{ link.subtitle }}</small>
     </a>
 
   {% endfor %}
+
 </div>
 
 
 <section class="section-list">
 
   <aside class="section-list__title">
-    <h3 class="no-margin text-semibold">altrove</h3>
+    <h3 class="no-margin text-semibold">writings</h3>
   </aside>
 
-  <div class="section-list__content">
-    <p>lo si trova su twitter come <a href="http://twitter.com/philapple">@philapple</a></p>
-    <p>usa <a href="http://snapchat.com/add/filippocorti">snapchat</a>, ma raramente lo si vede</p>
-    <p>quando è in giro, mette foto con filtri su <a href="http://instagr.am/philapple">instagram</a></p>
-    <p>su <a href="http://goodreads.com/user/show/4464224-filippo-corti">goodreads</a> c'è quello che sta leggendo</p>
-    <p>su <a href="http://lastfm.it/user/philapple">last.fm</a> la musica che sta ascoltando</p>
+  <div class="section-list__content posts">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
   </div>
 
 </section>
-
-<section class="section-list">
-
-  <aside class="section-list__title">
-    <h3 class="no-margin text-semibold">contatti</h3>
-  </aside>
-
-  <div class="section-list__content">
-    <p>l'email è <strong class="force-select-all">me@filippocorti.net</strong>; è lento a rispondere</p>
-    <p>per le persone serie, ha (ma non usa) <a href="https://www.linkedin.com/in/philapple">linkedin</a></p>
-  </div>
-
-</section>
-
 
 <script type="text/javascript">
     var feed = new Instafeed({
