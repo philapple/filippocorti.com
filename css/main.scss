@@ -18,6 +18,9 @@ $background-color:        #f7f7f7; // TODO: refactor with Material Design code
 
 $light-color:             #b1b1b1; // TODO: refactor with Material Design code
 $grey-900:                #212121;
+$grey-700:                #616161;
+$grey-600:                #757575;
+$grey-500:                #9E9E9E;
 $grey-300:                #E0E0E0;
 $grey-100:                #F5F5F5;
 
@@ -38,6 +41,7 @@ $secondary-font:       "Input Mono", "Courier", sans-serif;
         "gutenberg",
         "utilities",
         "atoms",
+        "clicks",
         "layout",
         "header",
         "animations",

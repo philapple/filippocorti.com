@@ -60,12 +60,24 @@
   font-family: $secondary-font;
 }
 
+.text-secondary {
+  color: $grey-500;
+}
+
 .text-semibold, .text-bold {
   font-weight: 600;
 }
 
 .text-light {
   font-weight: 300;
+}
+
+.text-grey {
+  color: $grey-500;
+}
+
+.text-link-color {
+  color: $link-color;
 }
 
 .text-regular {

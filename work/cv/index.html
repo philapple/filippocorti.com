@@ -1,0 +1,74 @@
+---
+layout: default
+title: Filippo Corti | CV
+id: cv
+excerpt: What I do, and what I've done
+---
+
+<div class="flexbox no-margin-bottom">
+
+  <section class="contacts">
+    <h3 class="no-margin text-uppercase baffle"><span class="text-light">Filippo</span> Corti</h2>
+    <h4 class="no-margin text-light">UX Designer</h4>
+    <p class="no-margin">me@filippocorti.net</p>
+    <p class="no-margin-top">London, UK</p>
+
+    <button class="primary-btn--large" onclick="window.location.href='/hi'">Contact me</button>
+  </section>
+
+  <ul class="links hidden-sm">
+    <li><a href="http://uk.linkedin.com/in/philapple/">Add me on Linkedin</a></li>
+    <li><a href="https://github.com/philapple">Visit my GitHub profile</a></li>
+    <li><a href="http://twitter.com/philapple">Follow me on Twitter</a></li>
+  </ul>
+
+</div>
+
+<section class="cv">
+
+    <h2 class="no-margin-top">Work experience</h2>
+
+    {% for work in site.data.cv["work"] %}
+    <div class="job-position">
+      <small class="date">{{ work.startDate }} {% if work.endDate != "" %}— {{ work.endDate }}{% endif %}</small>
+      <h3 class="no-margin text-light">{{ work.company }}</h3> <h4 class="no-margin">{{ work.position }}</h4>
+      <p> {{ work.summary }} </p>
+    </div>
+    {% endfor %}
+
+    <h2>Skills</h2>
+
+    {% for skills in site.data.cv["skills"] %}
+
+    <span class="tag">{{ skills.name }}</span>
+
+      {% for key in skills.keywords %}
+
+        <span class="tag">{{ key }}</span>
+
+      {% endfor %}
+
+    {% endfor %}
+
+    <h2>Languages</h2>
+
+    {% for language in site.data.cv["languages"] %}
+
+    <span class="tag">{{ language.language }}: {{ language.fluency }}</span>
+
+
+    {% endfor %}
+
+
+    <h2>Education</h2>
+
+    {% for education in site.data.cv["education"] %}
+    <small class="date">{{ education.startDate }} — {{ education.endDate }}</small>
+    <h3 class="no-margin text-light">{{ education.institution }}</h4>
+    <h4 class="no-margin">{{ education.studyType }} in {{ education.area }}</h5>
+    <p> {{ work.summary }} </p>
+
+    {% endfor %}
+
+
+</section>

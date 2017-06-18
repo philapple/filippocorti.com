@@ -5,6 +5,10 @@ $(document).ready(function() {
 		typeSpeed: 50
 	});
 
+	// Select elements and start.
+const b = baffle('.baffle').start().set({ speed: 100 }).reveal(4000);
+
+
 	var page404 = $('.page-404');
 	var avatar = $('.avatar');
 
@@ -36,3 +40,44 @@ $(document).ready(function() {
 	page404.on('click', changeImage);
 
 });
+
+function getMediumRss(callback) {
+    const URL = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22http%3A%2F%2Ffeeds.eppol.net%2Fblogmac%22LIMIT%205%20&format=json&callback=";
+    return window.fetch(URL, {
+        method: 'GET'
+    }).then(function(data) {
+        data.json().then(function (results) {
+            const articles = results.query.results.item;
+            callback(articles);
+        });
+    });
+}
+
+function Article(model) {
+    var render = function () {
+        return '<p><a href="' + model.link + '" class="post-link" target="_blank">' + model.title + '</a></p>';
+    };
+
+    return {
+        render: render
+    };
+}
+
+function renderArticles(selector) {
+    getMediumRss(function (articles) {
+        var articlesDOMString = '';
+
+        articles.forEach(function (article) {
+            articlesDOMString += new Article(article).render();
+        });
+
+        var domSelector = document.querySelector(selector);
+        domSelector.innerHTML = articlesDOMString;
+    });
+}
+
+window.onload = function () {
+    renderArticles('.posts');
+
+    window.onload = undefined;
+};

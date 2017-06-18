@@ -9,6 +9,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "baffle": "^0.3.6",
     "d3": "^4.4.0",
     "instafeed.js": "^1.4.1",
     "jquery": "^3.1.1",

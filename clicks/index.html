@@ -1,0 +1,54 @@
+---
+layout: default
+title: Filippo Corti | Clicks
+id: tab-dump
+excerpt: Excursions around the web
+---
+
+<h2 class="no-margin-top"><i class="icon icon-mouse"></i> Clicks</h2>
+
+<p class="attention-grabber no-margin-bottom">
+  A stream of things I've been reading, online.
+  Some end up in <a href="http://blog.filippo.me">my blog</a>.
+  There's also an <i class="icon icon-rss-square text-link-color"></i>
+  <a href="http://feeds.eppol.net/orpolina">RSS feed</a>.
+</p>
+
+
+<hr/>
+
+<div id="bookmarks">
+  <div class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</div>
+
+
+<script language="javascript">
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if(pair[0] == variable) { return pair[1]; }
+  }
+  return(
+    tag = "read"
+  );
+}
+
+var tag = getQueryVariable("tag");
+var url = "<script src='https://pinboard.in//widgets/v1/linkroll/?user=philapple&count=40&tag="
+          + tag +
+          "'><\/script>";
+
+$(function() {
+  postscribe('#bookmarks', url, {
+    done: function() {
+      $('.spinner').remove();
+    }
+  });
+});
+
+</script>

@@ -1,5 +1,6 @@
-sectiontitle,icon,url
-@philapple,icons/twitter.svg,http://twitter.com/philapple
-Blog,icons/blog.svg,http://bicyclemind.it
-CV,icons/document.svg,/work
-Bookshelf,icons/book.svg,/library
+sectiontitle,subtitle,icon,url
+Twitter,@philapple,icons/twitter.svg,http://twitter.com/philapple
+Blog,"Bicycle Mind",icons/speech.svg,http://bicyclemind.it
+Work,"UX + Code",icons/code.svg,/work
+Clicks,"Web excursions",icons/cursor.svg,/clicks
+Favourites,"Books, Music, etc.",icons/favourites.svg,/library
