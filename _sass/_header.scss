@@ -2,12 +2,24 @@
   #HEADER
 \*------------------------------------*/
 
+.site-header:hover {
+  background: linear-gradient(135deg, $light-accent-color, $accent-color);
+  transition: 1s;
+
+  .header__section.header__nav a {
+    color: #fff;
+  }
+
+}
+
 .site-header {
   background: $background-color;
   padding: $spacing-unit/2 0;
   margin-bottom: $spacing-unit;
   max-width: 100%; /* reset max-width */
   font-family:  $secondary-font;
+  border-bottom: 1px solid #eee;
+
 
   a:visited:hover, a:hover {
     background: none;
@@ -46,9 +58,8 @@
   &.header__nav a {
     font-size: 0.9em;
     text-decoration: none;
-    text-transform: uppercase;
     margin: 0 0.1em;
-    color: $light-color;
+    color: $grey-900;
 
     /* Animation on :hover */
     &::before, &::after {
@@ -77,14 +88,45 @@
     	transform: translateX(0px);
     }
 
-    &:visited, &:active {
-      color: $light-color;
-    }
-
-    &:hover, &.active, &:visited:hover {
+    &:hover, &.active {
       color: $accent-color;
     }
 
   }
 
+}
+
+
+.subnav {
+  border-bottom: 1px solid $accent-color;
+  padding: $spacing-unit/3 0;
+  text-align: left;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline;
+      margin-right: $spacing-unit;
+    }
+
+    a {
+      color: $grey-900;
+      text-decoration: none;
+
+      &.active {
+        border-bottom: 3px solid $accent-color;
+        font-weight: bold;
+        color: $accent-color;
+        padding-bottom: 14px;
+      }
+
+      &:hover {
+        background: none;
+        color: $accent-color;
+      }
+    }
+  }
 }

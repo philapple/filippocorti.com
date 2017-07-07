@@ -73,3 +73,24 @@
   }
 
 }
+
+.social-links {
+
+  p {
+    line-height: 2.2;
+  }
+
+  a {
+    color: $grey-900;
+    background: $grey-100;
+    padding: 5px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 2px;
+
+    &:hover {
+      background: $light-accent-color;
+      color: $accent-color;
+    }
+  }
+}

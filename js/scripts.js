@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	$(".typed").typed({
-		strings: ["UX Designer", "Blogger", "Human", "Coffee Enthusiast", "Filippo Corti"],
+		strings: ["Filippo Corti"],
 		typeSpeed: 50
 	});
 
@@ -42,7 +42,7 @@ const b = baffle('.baffle').start().set({ speed: 100 }).reveal(4000);
 });
 
 function getMediumRss(callback) {
-    const URL = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22http%3A%2F%2Ffeeds.eppol.net%2Fblogmac%22LIMIT%205%20&format=json&callback=";
+    const URL = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22http%3A%2F%2Ffeeds.eppol.net%2Fblogmac%22LIMIT%208%20&format=json&callback=";
     return window.fetch(URL, {
         method: 'GET'
     }).then(function(data) {
