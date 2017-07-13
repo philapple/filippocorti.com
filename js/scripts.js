@@ -1,14 +1,15 @@
 $(document).ready(function() {
 
+	// Home title animation
 	$(".typed").typed({
 		strings: ["Filippo Corti"],
 		typeSpeed: 50
 	});
 
-	// Select elements and start.
-const b = baffle('.baffle').start().set({ speed: 100 }).reveal(4000);
+	// Titles 'baffle' animation
+	const b = baffle('.baffle').start().set({ speed: 100 }).reveal(1000);
 
-
+	// 404 GIFs
 	var page404 = $('.page-404');
 	var avatar = $('.avatar');
 
@@ -41,43 +42,58 @@ const b = baffle('.baffle').start().set({ speed: 100 }).reveal(4000);
 
 });
 
-function getMediumRss(callback) {
-    const URL = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22http%3A%2F%2Ffeeds.eppol.net%2Fblogmac%22LIMIT%208%20&format=json&callback=";
-    return window.fetch(URL, {
-        method: 'GET'
-    }).then(function(data) {
-        data.json().then(function (results) {
-            const articles = results.query.results.item;
-            callback(articles);
-        });
-    });
-}
+// Reading — reveal quotes
+	function loadQuote() {
+		$(this).toggleClass('pressed');
 
-function Article(model) {
-    var render = function () {
-        return '<p><a href="' + model.link + '" class="post-link" target="_blank">' + model.title + '</a></p>';
-    };
+		var txtBtn = $(this).find("span");
+		txtBtn.text() == txtBtn.data("text-swap")
+			? txtBtn.text(txtBtn.data("text-original"))
+			: txtBtn.text(txtBtn.data("text-swap"));
 
-    return {
-        render: render
-    };
-}
+		$(this).prevAll().not(':first-child').slideToggle();
+	};
 
-function renderArticles(selector) {
-    getMediumRss(function (articles) {
-        var articlesDOMString = '';
+	$('.book .btn').on('click', loadQuote);
 
-        articles.forEach(function (article) {
-            articlesDOMString += new Article(article).render();
-        });
+	// Home page latest articles
+	function getMediumRss(callback) {
+	    const URL = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22http%3A%2F%2Ffeeds.eppol.net%2Fblogmac%22LIMIT%208%20&format=json&callback=";
+	    return window.fetch(URL, {
+	        method: 'GET'
+	    }).then(function(data) {
+	        data.json().then(function (results) {
+	            const articles = results.query.results.item;
+	            callback(articles);
+	        });
+	    });
+	}
 
-        var domSelector = document.querySelector(selector);
-        domSelector.innerHTML = articlesDOMString;
-    });
-}
+	function Article(model) {
+	    var render = function () {
+	        return '<p><a href="' + model.link + '" class="post-link" target="_blank">' + model.title + '</a></p>';
+	    };
 
-window.onload = function () {
-    renderArticles('.posts');
+	    return {
+	        render: render
+	    };
+	}
 
-    window.onload = undefined;
-};
+	function renderArticles(selector) {
+	    getMediumRss(function (articles) {
+	        var articlesDOMString = '';
+
+	        articles.forEach(function (article) {
+	            articlesDOMString += new Article(article).render();
+	        });
+
+	        var domSelector = document.querySelector(selector);
+	        domSelector.innerHTML = articlesDOMString;
+	    });
+	}
+
+	window.onload = function () {
+	    renderArticles('.posts');
+
+	    window.onload = undefined;
+	};

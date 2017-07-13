@@ -8,21 +8,23 @@ excerpt: Some of my favourite books
 
 <nav class="subnav">
   <ul>
-    <li><a href="/library/" class="active">Books</a></li>
-    <li><a href="#">Things</a></li>
-    <li><a href="#">Movies</a></li>
+    <li><a href="../books/" class="active">Books</a></li>
+    <li><a href="../things/">Things</a></li>
   </ul>
 </nav>
 
-<p class="attention-grabber">An incomplete collection of some of my favourite books.</p>
+<p class="attention-grabber">An incomplete collection of some of my favourite books.
+  I like sad books and Russian novels.</p>
 
-<p>
-To find out what I'm reading ATM, check
-<a href="http://goodreads.com/user/show/4464224-filippo-corti">Goodreads</a>.
-For what I intend to read, have a look at my <a href="http://amzn.eu/25hflIV">Amazon Wishlist</a>.
-</p>
+<section>
+  <a href="reading" class="sectionLink">
+    {% include icons/book.svg %}
+    <strong>Currently reading</strong>:
 
-<hr/>
+    {% assign currentbook = site.reading | last %}
+    {{ currentbook.title }}, {{ currentbook.author }}
+  </a>
+</section>
 
 <section class="library larger">
 

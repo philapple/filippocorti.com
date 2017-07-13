@@ -4,6 +4,12 @@ title: Filippo Corti | CV
 id: cv
 excerpt: What I do, and what I've done
 ---
+<div>
+  <a href="../" class="btn-back">
+    <i class="icon icon-angle-left"></i>
+     Work & Projects
+   </a>
+</div>
 
 <div class="flexbox no-margin-bottom">
 
@@ -66,8 +72,11 @@ excerpt: What I do, and what I've done
     <small class="date">{{ education.startDate }} — {{ education.endDate }}</small>
     <h3 class="no-margin text-light">{{ education.institution }}</h4>
     <h4 class="no-margin">{{ education.studyType }} in {{ education.area }}</h5>
-    <p> {{ work.summary }} </p>
-
+    <p>
+      {% for course in education.courses %}
+        {{ course }},
+      {% endfor %}
+    </p>
     {% endfor %}
 
 

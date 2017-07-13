@@ -1,0 +1,60 @@
+---
+layout: default
+title: Filippo Corti | Reading
+id: reading
+excerpt: Books I've been reading
+---
+<div>
+  <a href="../" class="btn-back">
+    <i class="icon icon-angle-left"></i>
+     favourites
+   </a>
+</div>
+
+<h2 class="no-margin-top">Stuff I've Been Reading</h2>
+
+
+<p class="attention-grabber">Books I've been reading (only the ones I liked)
+— ordered chronologically.<p>
+
+<p>For what I intend to read, have a look at my <a href="http://amzn.eu/25hflIV">Amazon Wishlist</a>.
+  You can also <a href="http://www.goodreads.com/user/show/4464224-filippo-corti">
+  follow me on Goodreads</a>.
+</p>
+
+<section class="reading">
+
+  {% assign books = site.reading | sort: 'read' | reverse %}
+  {% for book in books %}
+
+  <div class="book no-margin" style="background:{{ book.s-color }}" id="{{ book.title | remove: " "}}">
+
+    <div class="book__cover">
+      <a href="https://www.amazon.co.uk/s/ref=nb_sb_noss?field-keywords={{ book.title }} {{ book.author }}">
+        <img src="{{ site.url }}/{{ book.cover }}" alt="{{ book.title }}"
+             style="box-shadow: -10px -10px 0px {{ book.m-color }};
+             border: 2px solid {{ book.s-color }}" />
+      </a>
+      <p class="no-margin" style="color:{{ book.m-color }};">{{ book.read | date: '%B %Y' }}</p>
+    </div>
+
+    <div class="book__quotes">
+      {% for quote in book.quotes %}
+          <p>{{ quote }}</p>
+      {% endfor %}
+
+      <a class="btn show">
+        <i class="icon icon-angle-down"></i>
+        <span data-text-swap="less" data-text-original="more">more</span> excerpts
+      </a>
+      <a class="btn" href="https://www.amazon.co.uk/s/ref=nb_sb_noss?field-keywords={{ book.title }} {{ book.author }}">
+        <i class="icon icon-amazon"></i>
+        get on Amazon
+      </a>
+    </div>
+
+  </div>
+
+  {% endfor %}
+
+</section>

@@ -3,7 +3,6 @@
 \*------------------------------------*/
 
 .page-404 {
-  text-align: center;
   padding: 6em 0;
   background: lighten($link-color, 55%);
   color: #fff;
@@ -14,10 +13,6 @@
   animation: fadeIn 3s;
 
   .error-message {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    text-align: left;
 
     & > span {
       padding: 0.3em 0.5em 0.3em;
@@ -35,37 +30,21 @@
   }
 
   .return-link {
-    position: absolute;
-    top: -65px;
-    left: 100px;
-    text-align: left;
 
     a {
-      padding: 1em;
-      margin: 1.5em auto;
-      display: block;
-      transition-duration: 1s;
+      margin-top: 2em;
       color: white;
-
+      text-decoration: none;
+      border-top: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      display: inline-block;
+      padding-bottom: 0.3em;
 
       &:hover {
         background: none;
       }
     }
 
-  }
-
-  .avatar {
-    max-width: 2em;
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    filter: grayscale(1);
-    transition-duration: 2s;
-
-    &:hover {
-      filter: grayscale(0);
-    }
   }
 
 }

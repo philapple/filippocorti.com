@@ -2,17 +2,32 @@
   #LIBRARY
 \*------------------------------------*/
 
+.content-library {
+
+  .sectionLink {
+    svg {
+      max-width: 45px;
+      top: -0.6em;
+    }
+  }
+}
+
 .library {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: $spacing-unit*2 auto;
+  max-width: 900px;
 
   .book {
-    width: 150px;
+    width: 180px;
+
+    @include media-query($small-screen) {
+      width: 110px;
+    }
 
     .book__cover {
-      max-height: 190px;
+      max-height: 210px;
       margin: 0;
       margin-bottom: $spacing-unit/2;
 
@@ -33,6 +48,90 @@
       font-size: 0.8em;
       color: $light-color;
     }
+  }
+
+}
+
+
+
+/*------------------------------------*\
+  #READING
+\*------------------------------------*/
+
+.reading {
+  max-width: none;
+
+  .book {
+    display: flex;
+    max-width: none;
+    align-items: center;
+    padding: 4em 2em 0 2em;
+    justify-content: space-around;
+
+    @include media-query($medium-screen) {
+      padding: 4em 2em 0 1em;
+    }
+
+    @include media-query($small-screen) {
+      flex-direction: column;
+    }
+
+    .book__cover {
+      font-family: $secondary-font;
+      font-size: 0.7em;
+      text-align: center;
+
+      img {
+        max-width: 250px;
+
+        @include media-query($medium-screen) {
+          max-width: 170px;
+          margin: 0 2em;
+        }
+      }
+    }
+
+    .book__quotes {
+      font-size: 1.2em;
+      line-height: 1.6;
+
+      p {
+        display: none;
+        font-weight: 300;
+      }
+
+      p:first-child {
+        display: block;
+        font-size: 1.2em;
+      }
+
+      a.btn {
+        @include btn($main-text-color, #fff, $main-text-color, $main-text-color, #fff);
+        font-size: 0.6em;
+        padding: 1em;
+        margin-right: 2em;
+        text-transform: uppercase;
+        box-shadow: -5px -5px 0 rgba(255,255,255,0.5);
+        border: 1px solid transparent;
+
+        .icon {
+          font-size: 1.4em;
+          display: inline-block;
+        }
+
+        &:hover, &.pressed {
+          box-shadow: 5px 5px 0 $main-text-color;
+          border: 1px solid #fff;
+
+          .icon {
+            transform: rotate(180deg);
+            top: 10px;
+          }
+        }
+
+      }
+    }
+
   }
 
 }

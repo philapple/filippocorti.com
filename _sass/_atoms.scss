@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  ATOMS
+\*------------------------------------*/
+
 .tag {
   background: $light-accent-color;
   color: $accent-color;
@@ -9,19 +13,35 @@
   white-space: nowrap;
 }
 
+@mixin btn($text, $background, $shadow, $hover, $hover-txt) {
+  font-family: $secondary-font;
+  color: $text;
+  background: $background;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 0.7em 1em 0.5em;
+  box-shadow: -3px -3px 0 $shadow;
+
+  &:hover, .pressed {
+    color: $hover-txt !important;
+    background: $hover !important;
+    box-shadow: 3px 3px 0 $hover;
+    cursor: pointer;
+  }
+
+  &:active, &:visited {
+    color: $text;
+    background: $background;
+  }
+}
 
 .primary-btn {
-  border: 2px solid $main-text-color;
-  color: $main-text-color;
-  background: #fff;
-  padding: 0.3em 3em;
+  @include btn($main-text-color, #fff, $grey-200, #fff, $accent-color);
   font-family: $primary-font;
-  font-weight: bold;
-  font-size: 0.5em;
+  border: 2px solid $main-text-color;
   box-shadow: -5px -5px 0px 0px $main-text-color;
 
   &:hover {
-    cursor: pointer;
     box-shadow: 5px 5px 0px 0px $accent-color;
     color: $accent-color;
     border-color: $accent-color;
@@ -31,4 +51,48 @@
 .primary-btn--large {
   @extend .primary-btn;
   font-size: 1.35em;
+  padding: 0.3em 3em;
+}
+
+.btn-back {
+  @include btn($main-text-color, $grey-100, $grey-200, $main-text-color, #fff);
+  font-size: 0.7em;
+  text-transform: uppercase;
+
+  .icon {
+    top: 2px;
+  }
+}
+
+.sectionLink, .sectionLink:visited {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 1px solid transparent;
+  background: #f7f7f7;
+  padding: 1em 2em;
+  display: block;
+  width: 100%;
+  line-height: 1.8;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,.1);
+
+  &:hover {
+    border: 1px solid $accent-color;
+    background: $light-accent-color;
+  }
+
+  svg {
+    margin-bottom: 0;
+    position: relative;
+    top: -0.5em;
+    max-width: 28px;
+    float: left;
+    margin-right: 0.8em;
+
+    @include media-query($small-screen) {
+      top: 0.2em;
+      max-width: none;
+    }
+
+  }
 }

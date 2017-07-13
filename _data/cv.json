@@ -34,16 +34,11 @@
       "website": "http://radar.klood.com",
       "startDate": "2015-05",
       "endDate": "Current",
-      "summary": "Responsible for the overall UX of the app, from mockups to final designs.",
-      "highlights": []
-    },
-    {
-      "company": "Freelance",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2012",
-      "endDate": "Current",
-      "summary": "Web design, content managment and development for small shops, B&B and individuals. Frequently in WordPress or Jekyll",
+      "summary": "Responsible for the overall UX  — from research & mockups to
+                  the final look & feel — of the Radar app, a webapp for market research.
+                  The designs are mostly done with Sketch; organised and documented
+                  following Atomic Design principles. I've also designed and built the
+                  company website (WordPress) & the app website (Jekyll).",
       "highlights": []
     },
     {
@@ -52,7 +47,7 @@
       "website": "",
       "startDate": "12-2014",
       "endDate": "06-2014",
-      "summary": "Internship as a front-end web developer. Worked on a “digital storytelling” project with one of the main publisher in Italy, “Gruppo Digitale l’Espresso”, towards creating an interactive piece of journalism",
+      "summary": "This was an Internship, with il “Gruppo Digitale l’Espresso” — one of the main publishers in Italy. I worked as a front-end developer on a digital storytelling project — the final product was a longform piece of journalism enriched with videos, infographics and other interactive elements. D3.js was used for the infographics.",
       "highlights": []
     },
     {
@@ -61,16 +56,7 @@
       "website": "",
       "startDate": "2012",
       "endDate": "",
-      "summary": "Written reviews, tutorials and opinion articles for two tech magazines published by this editor",
-      "highlights": []
-    },
-    {
-      "company": "Blogo.it",
-      "position": "Blogger",
-      "website": "",
-      "startDate": "2011",
-      "endDate": "",
-      "summary": "Paid tech blogger for (what was) the biggest Italian blog network",
+      "summary": "Written software reviews — focused on usability —, tutorials and opinion articles for two tech magazines published by this editor",
       "highlights": []
     }
   ],
@@ -83,7 +69,9 @@
       "startDate": "2014",
       "endDate": "2016",
       "gpa": "",
-      "courses": []
+      "courses": ["Digital Marketing", "GIS: Introduction to the Spatial Humanities",
+                  "Materials Culture of the Book", "Internet Systems",
+                  "Metadata and Systems for digital assets and media"]
     },
     {
       "institution": "University of Pisa",
@@ -92,7 +80,9 @@
       "startDate": "2010",
       "endDate": "2014",
       "gpa": "",
-      "courses": []
+      "courses": ["Web Dev", "Databases", "Fundamentals of Programming",
+                  "Linguistics", "Computational Linguistics", "Cultural Geography",
+                  "Human Computer Interaction"]
     }
   ],
   "awards": [],

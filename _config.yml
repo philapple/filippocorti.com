@@ -27,3 +27,11 @@ gems:
 navigation:
 - text: Contact me
   url: /hi
+
+# Collections
+collections:
+  reading:
+    defaults:
+      path: "reading"
+    values:
+      layout: reading
