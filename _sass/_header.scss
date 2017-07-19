@@ -1,7 +1,6 @@
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
-
 .site-header:hover {
   background: linear-gradient(135deg, $light-accent-color, $accent-color);
   transition: 1s;
@@ -97,6 +96,9 @@
 }
 
 
+/*------------------------------------*\
+  #SUBNAV
+\*------------------------------------*/
 .subnav {
   border-bottom: 1px solid $accent-color;
   padding: $spacing-unit/3 0;
@@ -121,6 +123,10 @@
         font-weight: bold;
         color: $accent-color;
         padding-bottom: 14px;
+
+        @include media-query($small-screen) {
+          padding-bottom: 12px;
+        }
       }
 
       &:hover {
@@ -128,5 +134,14 @@
         color: $accent-color;
       }
     }
+  }
+}
+
+/*------------------------------------*\
+  #INTRODUCTION
+\*------------------------------------*/
+.introduction {
+  @include media-query($small-screen) {
+    margin: 0 $spacing-unit;
   }
 }

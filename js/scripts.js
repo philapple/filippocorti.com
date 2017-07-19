@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 // Reading — reveal quotes
 	function loadQuote() {
-		$(this).toggleClass('pressed');
+		$(this).toggleClass('btn-expand__pressed');
 
 		var txtBtn = $(this).find("span");
 		txtBtn.text() == txtBtn.data("text-swap")
@@ -54,7 +54,7 @@ $(document).ready(function() {
 		$(this).prevAll().not(':first-child').slideToggle();
 	};
 
-	$('.book .btn').on('click', loadQuote);
+	$('.btn-expand').on('click', loadQuote);
 
 	// Home page latest articles
 	function getMediumRss(callback) {

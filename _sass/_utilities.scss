@@ -22,6 +22,14 @@
   margin-top: 0;
 }
 
+.margin-top {
+  margin-top: $spacing-unit;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
 .no-border {
   border-radius: 0;
   border: 0;

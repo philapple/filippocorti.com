@@ -21,7 +21,7 @@ excerpt: Some of my favourite books
     {% include icons/book.svg %}
     <strong>Currently reading</strong>:
 
-    {% assign currentbook = site.reading | last %}
+    {% assign currentbook = site.reading | sort:"read" | last %}
     {{ currentbook.title }}, {{ currentbook.author }}
   </a>
 </section>

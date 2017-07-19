@@ -1,0 +1,31 @@
+
+
+  #instafeed {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 5em auto;
+    max-width: 45em;
+
+    a {
+      margin: 0 0.3em 0.3em 0;
+      display: inline-block;
+      overflow: hidden;
+      background: $light-accent-color;
+      max-width: 200px;
+    }
+
+    img {
+      margin: 0;
+      border-radius: 1px;
+      transition: all .2s ease;
+      vertical-align: middle;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1.2);
+
+      &:hover {
+        transform: scale(1.5);
+        filter: none;
+      }
+    }
+  }
