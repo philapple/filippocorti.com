@@ -12,6 +12,10 @@
   white-space: nowrap;
 }
 
+.highlight {
+  background: #CCE4FF;
+}
+
 @mixin btn($text, $background, $shadow, $hover, $hover-txt) {
   font-family: $secondary-font;
   color: $text;

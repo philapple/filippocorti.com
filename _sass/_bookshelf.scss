@@ -20,7 +20,7 @@
   max-width: 900px;
 
   .book {
-    width: 180px;
+    width: 170px;
 
     @include media-query($small-screen) {
       width: 100px;
@@ -94,6 +94,15 @@
     .book__quotes {
       font-size: 1.2em;
       line-height: 1.6;
+
+      .book__readDate {
+        font-size: 0.6em;
+        font-family: $secondary-font;
+        span {
+        background: rgba(255,255,255,0.5);
+        padding: 1px 2px;
+      }
+      }
 
       p {
         display: none;

@@ -39,10 +39,11 @@ excerpt: Books I've been reading
              style="box-shadow: -10px -10px 0px {{ book.m-color }};
              border: 2px solid {{ book.s-color }}" />
       </a>
-      <p class="no-margin" style="color:{{ book.m-color }};">{{ book.read | date: '%B %Y' }}</p>
     </div>
 
     <div class="book__quotes">
+      <div class="no-margin book__readDate">Read: <span>{{ book.read | date: '%B %Y' }}</span></div>
+<div>
       {% for quote in book.quotes %}
           <p>{{ quote }}</p>
       {% endfor %}
@@ -55,6 +56,7 @@ excerpt: Books I've been reading
         <i class="icon icon-amazon"></i>
         get on Amazon
       </a>
+    </div>
     </div>
 
   </div>
