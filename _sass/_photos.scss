@@ -1,31 +1,22 @@
+#instafeed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
 
+    @include media-query($small-screen) {
+      padding: $mobile-margin;
+      grid-column-gap: 1em;
+    }
 
-  #instafeed {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    margin: 5em auto;
-    max-width: 90%;
-
-    a {
-      margin: 0 0.3em 0.3em 0;
-      display: inline-block;
-      overflow: hidden;
-      background: $light-accent-color;
-      max-width: 200px;
+    a:hover {
+      background: none;
     }
 
     img {
-      margin: 0;
-      border-radius: 1px;
-      transition: all .2s ease;
-      vertical-align: middle;
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1.2);
+      transition: 1s;
 
       &:hover {
         transform: scale(1.5);
-        filter: none;
       }
     }
   }
