@@ -1,0 +1,35 @@
+---
+layout: default
+title: Filippo Corti | Library
+id: library
+excerpt: Some of my favourite books
+---
+<h2 class="no-margin-top baffle">Favourites</h2>
+
+<nav class="subnav">
+  <ul>
+    <li><a href="../books/">Books</a></li>
+    <li><a href="../movies/" class="active">Movies</a></li>
+    <li><a href="../things/">Things</a></li>
+  </ul>
+</nav>
+
+<p class="attention-grabber">Some of my favourite movies. Follow me on
+  <a href="https://letterboxd.com/fcorti/films/">Letterboxd</a> to spy on everything I'm watching.</p>
+
+<section class="library larger">
+
+  {% for movie in site.data.movies %}
+
+    <div class="book">
+      <a href="http://letterboxd.com/search/films/={{movie.title}}">
+        <img src="{{ site.url }}/assets/movies/{{ movie.cover }}" alt="{{ movie.title }}" class="book__cover fadeIn animated"/>
+      </a>
+      <p><b class="book__title text-semibold">{{ movie.title }}</b>
+      <em class="book__author text-light">{{ movie.author }}</em></p>
+
+    </div>
+
+  {% endfor %}
+
+</section>
