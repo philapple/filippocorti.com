@@ -117,12 +117,14 @@
     a {
       color: $grey-900;
       text-decoration: none;
+      padding: 0 1em;
 
       &.active {
         border-bottom: 3px solid $accent-color;
         font-weight: bold;
         color: $accent-color;
         padding-bottom: 14px;
+
 
         @include media-query($small-screen) {
           padding-bottom: 12px;

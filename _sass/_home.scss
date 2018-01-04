@@ -31,18 +31,24 @@
     justify-content: space-between;
     margin: 0 0 $spacing-unit*2;
     padding: $spacing-unit $spacing-unit*2;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     background: $background-color;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
+    @include media-query($medium-screen) {
+      padding: $mobile-margin 0;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2em;
+    }
+
     @include media-query($small-screen) {
-      padding: $mobile-margin;
+      grid-template-columns: repeat(3, 1fr);
     }
 
     a {
-      width: 150px;
       height: 120px;
+      margin:  0;
       text-decoration: none;
       color: $main-text-color;
       transition: all .2s ease-in-out;

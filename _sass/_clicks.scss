@@ -1,13 +1,19 @@
-.content-tab-dump {
+#bookmarks {
   @include media-query($small-screen) {
     padding: $mobile-margin;
+    padding-top: 0;
   }
 }
 
 a.pin-title, a:visited.pin-title {
   font-family: $primary-font;
-  color: $link-color;
+  color: $grey-900;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
   font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-decoration: none;
 
   &:hover {
     background: $link-color;
@@ -25,8 +31,7 @@ a.pin-title, a:visited.pin-title {
 
 .pin-description {
   font-family: $primary-font;
-  font-size: 0.95em;
-  line-height: 1;
+  line-height: 0.8;
 }
 
 .pin-tag {

@@ -21,7 +21,7 @@ markdown: kramdown
 include: [node_modules]
 exclude: []
 
-gems:
+plugins:
   - octopress-autoprefixer
 
 # Header nav
@@ -36,3 +36,8 @@ collections:
       path: "reading"
     values:
       layout: reading
+  places:
+    defaults:
+      path: "places"
+    values:
+      layout: places
