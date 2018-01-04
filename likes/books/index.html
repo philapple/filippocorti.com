@@ -9,6 +9,7 @@ excerpt: Some of my favourite books
 <nav class="subnav">
   <ul>
     <li><a href="../books/" class="active">Books</a></li>
+    <li><a href="../movies/">Movies</a></li>
     <li><a href="../things/">Things</a></li>
   </ul>
 </nav>
@@ -19,7 +20,7 @@ excerpt: Some of my favourite books
 <section>
   <a href="reading" class="sectionLink">
     {% include icons/book.svg %}
-    <strong>Currently reading</strong>:
+    <strong>Currently reading:</strong>
 
     {% assign currentbook = site.reading | sort:"read" | last %}
     {{ currentbook.title }}, {{ currentbook.author }}
@@ -31,11 +32,11 @@ excerpt: Some of my favourite books
   {% for book in site.data.books %}
 
     <div class="book">
-      <a href="https://www.amazon.it/s/ref=nb_sb_noss?field-keywords={{ book.title }} {{ book.author }}">
+      <a href="https://www.amazon.com/s/ref=nb_sb_noss?field-keywords={{ book.title }} {{ book.author }}">
         <img src="{{ site.url }}/assets/library/{{ book.cover }}" alt="{{ book.title }}" class="book__cover fadeIn animated"/>
       </a>
-      <b class="book__title text-semibold">{{ book.title }}</b>
-      <em class="book__author text-light">{{ book.author }}</em>
+      <p><b class="book__title text-semibold">{{ book.title }}</b>
+      <em class="book__author text-light">{{ book.author }}</em></p>
 
     </div>
 

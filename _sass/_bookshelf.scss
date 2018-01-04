@@ -13,26 +13,34 @@
 }
 
 .library {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1em;
   margin: $spacing-unit*2 auto;
   max-width: 900px;
 
-  .book {
-    width: 170px;
+  @include media-query($medium-screen) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    @include media-query($small-screen) {
-      width: 100px;
-    }
+  @include media-query($small-screen) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .book {
+    margin: 0;
 
     .book__cover {
-      max-height: 210px;
-      margin: 0;
+      margin: auto 0;
+      max-height: 220px;
       margin-bottom: $spacing-unit/2;
 
+      &:hover {
+        filter: grayscale(100%);
+      }
+
       @include media-query($small-screen) {
-        max-height: 130px;
+        max-height: 150px;
       }
 
     }
@@ -58,6 +66,13 @@
   #READING
 \*------------------------------------*/
 
+.page-reading {
+  margin-top: 20px;
+  header {
+    display: none;
+  }
+}
+
 .reading {
   max-width: none;
 
@@ -66,11 +81,6 @@
     max-width: none;
     align-items: center;
     padding: 4em 2em 0 2em;
-    justify-content: space-around;
-
-    @include media-query($medium-screen) {
-      padding: 4em 2em 0 1em;
-    }
 
     @include media-query($small-screen) {
       flex-direction: column;
@@ -80,9 +90,15 @@
       font-family: $secondary-font;
       font-size: 0.7em;
       text-align: center;
+      align-self: self-start;
+      margin-right: 2em;
 
       img {
         max-width: 250px;
+
+        &:hover {
+          filter: brightness(90%);
+        }
 
         @include media-query($medium-screen) {
           max-width: 170px;
