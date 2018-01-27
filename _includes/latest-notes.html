@@ -1,0 +1,44 @@
+{% for post in paginator.posts %}
+
+<article itemscope itemtype="http://schema.org/BlogPosting" class="hentry {% for tag in post.tags %}tag-{{tag}}{% endfor %} notes-post type-{{post.type}}">
+  <div class="entry-header">
+    {% if post.type == "micro" or post.type == "quotes" %}
+    {% else %}
+    <div class="entry-date no-margin">
+      <a href="{{ post.url }}">{{ post.date | date: '%d %b %Y' }}</a>
+    </div>
+    <h3 class="no-margin"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {% endif %}
+  </div>
+
+  <div itemprop="articleBody" class="article-body entry-content no-margin-bottom">
+    {{ post.content }}
+  </div>
+
+  <div class="entry-footer no-margin-top">
+
+    {% if post.type == "micro" %}
+    <div class="entry-date no-margin-top">
+      <a href="{{ post.url }}"> → {{ post.date | date: '%d %b %Y' }}</a>
+    </div>
+    {% else %}
+    <div class="entry-tags no-margin">
+      {% for tag in post.tags %}
+      <a href="{{site.url}}/notes/{{tag}}" class="post-tag">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+
+</article>
+{% endfor %}
+
+
+{% if paginator.total_pages > 1 %}
+  <div class="navigation">
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="button">Older <i class="icon icon-angle-right"></i></a>
+    {% endif %}
+  </div>
+{% endif %}

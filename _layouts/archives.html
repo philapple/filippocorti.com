@@ -1,0 +1,10 @@
+---
+layout: default
+id: notes
+---
+
+<h1 class="no-margin-top font-secondary">
+  #<b>{% if page.autopages %}{{page.autopages.display_name}}{% endif %}</b>
+</h1>
+
+{% include latest-notes.html %}

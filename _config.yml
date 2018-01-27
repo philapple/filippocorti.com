@@ -36,16 +36,15 @@ pagination:
   title: ':title - page :num'
 
 autopages:
-
-  # Site-wide kill switch, disable here and it doesn't run at all
   enabled: true
-
-  # Tag pages, omit to disable
   tags:
     layouts:
       - 'archives.html'
-    title: 'Posts tagged with :tag' # :tag is replaced by the tag name
     permalink: 'notes/:tag'
+  categories:
+    enabled: false
+  collections:
+    enabled: false
 
 
 # Header nav
@@ -55,6 +54,8 @@ navigation:
 
 # Collections
 collections:
+  posts:
+     permalink: /notes/:year/:month/:title/
   reading:
     defaults:
       path: "reading"

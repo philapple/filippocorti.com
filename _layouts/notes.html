@@ -1,11 +1,39 @@
 ---
 layout: default
 ---
-<article itemscope itemtype="http://schema.org/BlogPosting" class="notes">
-  <h2 itemprop="name headline no-margin">{{ page.title }}</h2>
 
-  <div itemprop="articleBody" class="article-body">
+<article itemscope itemtype="http://schema.org/BlogPosting" class="hentry notes-post notes-post--single {% for tag in page.tags %}tag-{{tag}}{% endfor %} type-{{page.type}}">
+
+    <div>
+    <a href="/notes" class="button"><i class="icon icon-angle-left"></i> <i class="icon icon-document"></i></a>
+    </div>
+
+    <div class="entry-header">
+    {% if page.type == "micro" or page.type == "quote" %}
+    {% else %}
+    <div class="entry-date no-margin">
+      <a href="{{ post.url }}">{{ page.date | date: '%d %B %Y' }}</a>
+    </div>
+    <h1 class="no-margin"><a href="{% if page.source %} {{ page.source }} {% else %} {{ post.url }} {% endif %}">{{ page.title }}</a></h1>
+    {% endif %}
+  </div>
+
+  <div itemprop="articleBody" class="article-body entry-content no-margin-bottom">
     {{ content }}
+  </div>
+
+  <div class="entry-footer no-margin-top">
+    {% if page.type == "micro" %}
+    <div class="entry-date no-margin-top">
+      <a href="{{ post.url }}"> → {{ page.date | date: '%d %B %Y' }}</a>
+    </div>
+    {% else %}
+    <div class="entry-tags no-margin">
+      {% for tag in page.tags %}
+      <a href="{{site.url}}/notes/{{tag}}" class="post-tag">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 
 </article>
