@@ -94,6 +94,7 @@
     @include media-query($small-screen) {
       top: 0.2em;
       max-width: none;
+      margin-bottom: 1em;
     }
 
   }
