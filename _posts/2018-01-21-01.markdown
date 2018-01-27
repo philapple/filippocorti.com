@@ -1,8 +1,0 @@
----
-layout: notes
-type: micro
-date: 2018-01-21
-tags: micro
----
-
-First micropost here — hello, world 🖖

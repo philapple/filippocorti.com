@@ -23,29 +23,6 @@ exclude: []
 
 plugins:
   - octopress-autoprefixer
-  - jekyll-paginate-v2
-
-# Pagination configuration for notes/blog
-pagination:
-  enabled: true
-  collection: 'posts'
-  per_page: 10
-  sort_field: 'date'
-  sort_reverse: true
-  permalink: '/page/:num/'
-  title: ':title - page :num'
-
-autopages:
-  enabled: true
-  tags:
-    layouts:
-      - 'archives.html'
-    permalink: 'notes/:tag'
-  categories:
-    enabled: false
-  collections:
-    enabled: false
-
 
 # Header nav
 navigation:
