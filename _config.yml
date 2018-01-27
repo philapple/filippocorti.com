@@ -9,9 +9,9 @@
 title: Filippo Corti
 email: me@filippocorti.net
 description: >
-  UX designer and web developer.
+  UX/UI designer and web developer.
   Coffee Enthusiast.
-  Blogger and .
+  Blogger.
 url: https://www.filippocorti.net
 twitter_username: philapple
 github_username:  philapple
@@ -31,6 +31,8 @@ navigation:
 
 # Collections
 collections:
+  posts:
+     permalink: /notes/:year/:month/:title/
   reading:
     defaults:
       path: "reading"

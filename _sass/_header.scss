@@ -112,12 +112,28 @@
     li {
       display: inline;
       margin-right: $spacing-unit;
+
+      @include media-query($small-screen) {
+        margin-right: $spacing-unit/3;
+      }
+
+      &.right {
+        float: right;
+        margin-right: 0;
+        a {
+          padding-right: 0;
+        }
+      }
     }
 
     a {
       color: $grey-900;
       text-decoration: none;
       padding: 0 1em;
+
+      @include media-query($small-screen) {
+        padding: 0 0.5em;
+      }
 
       &.active {
         border-bottom: 3px solid $accent-color;
@@ -128,6 +144,10 @@
 
         @include media-query($small-screen) {
           padding-bottom: 12px;
+        }
+
+        .icon {
+          top: 4px;
         }
       }
 

@@ -9,6 +9,11 @@
       max-width: 45px;
       top: -0.6em; /* adjust icon alignment */
     }
+
+    @include media-query($small-screen) {
+      line-height: 1.4;
+    }
+
   }
 }
 
@@ -21,10 +26,12 @@
 
   @include media-query($medium-screen) {
     grid-template-columns: repeat(4, 1fr);
+    margin: $spacing-unit*2;
   }
 
   @include media-query($small-screen) {
     grid-template-columns: repeat(3, 1fr);
+    margin: $spacing-unit*2 auto;
   }
 
   .book {

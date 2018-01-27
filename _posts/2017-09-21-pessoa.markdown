@@ -1,9 +1,0 @@
----
-layout: notes
-type: micro
-date: 2017-08-30
-categories: notes
-permalink: notes/pessoa
----
-
-Freedom is the possibility of isolation,” he writes in the final entry. “If you cannot live alone, then you were born a slave.
