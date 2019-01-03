@@ -74,7 +74,7 @@
 }
 
 .text-semibold, .text-bold {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .text-light {
@@ -95,6 +95,10 @@
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
 }
 
 .text-center {

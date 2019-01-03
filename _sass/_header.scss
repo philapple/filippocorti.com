@@ -1,15 +1,6 @@
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
-.site-header:hover {
-  background: linear-gradient(135deg, $light-accent-color, $accent-color);
-  transition: 1s;
-
-  .header__section.header__nav a {
-    color: #fff;
-  }
-
-}
 
 .site-header {
   background: $background-color;
