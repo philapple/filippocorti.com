@@ -11,10 +11,11 @@ id: home
 
   <div class="no-margin-bottom">
     <p class="attention-grabber no-margin-bottom">
-      UX designer and web developer from Italy.
-      I've been writing a blog about technology since 2005 —
-      <a href="https://bicyclemind.it">Bicycle Mind</a>.
-      I'm currently working from London, as the UX Designer of a small startup.
+      Product designer and web developer from Italy, based in London.
+      I've been keeping a blog since 2005: it's called
+      <a href="https://bicyclemind.it">bicyclemind</a> and it's not about bicycles;
+      it's about computers. When I'm not moving pixels in front of a screen
+      I like to <a href="/likes/books/reading">read sad books</a>.
     </p>
 
     <!--
@@ -33,7 +34,7 @@ id: home
     <a href="{{link.url}}">
       {% include {{link.icon}} %}
       <strong class="featured-links__title no-margin-bottom">{{ link.sectiontitle }}</strong>
-      <small class="text-secondary text-uppercase">{{ link.subtitle }}</small>
+      <small class="text-secondary text-lowercase">{{ link.subtitle }}</small>
     </a>
 
   {% endfor %}
@@ -44,7 +45,7 @@ id: home
 <section class="section-list">
 
   <aside class="section-list__title">
-    <h3 class="no-margin text-semibold">writings</h3>
+    <h3 class="no-margin">writings</h3>
   </aside>
 
   <div class="section-list__content posts">
