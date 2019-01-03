@@ -29,16 +29,30 @@
   },
   "work": [
     {
+      "company": "Flux",
+      "position": "Product Designer",
+      "website": "http://www.tryflux.com",
+      "startDate": "2018-01",
+      "endDate": "Current",
+      "summary": "We're adding atomised information for each transaction to your
+                  existing banking app — not just how much you spent and where,
+                  but also what you bought. I joined at an early stage,
+                  helping from start to define the consumer facing product and the merchant
+                  dashboard, a kind of Google Analytics for offline retailers.",
+      "highlights": []
+    },
+    {
       "company": "Klood",
       "position": "UX and UI Designer",
       "website": "http://radar.klood.com",
       "startDate": "2015-05",
-      "endDate": "Current",
-      "summary": "Responsible for the overall UX  — from research & mockups to
-                  the final look & feel — of the Radar app, a webapp for market research.
-                  The designs are mostly done with Sketch; organised and documented
-                  following Atomic Design principles. I've also designed and built the
-                  company website (WordPress) & the app website (Jekyll).",
+      "endDate": "2017-12",
+      "summary": "Worked on Radar, a webapp for market research. I was in charge
+                  of the design process — from research (of what to build) to
+                  the final look & feel of the app. I designed in Sketch, following
+                  Atomic Design principles, and I helped creating and mantaining a
+                  component-based style guide. I've also designed and coded the company
+                  website (WordPress) & the app website (Jekyll).",
       "highlights": []
     },
     {
@@ -47,7 +61,10 @@
       "website": "",
       "startDate": "12-2014",
       "endDate": "06-2014",
-      "summary": "This was an Internship, with il “Gruppo Digitale l’Espresso” — one of the main publishers in Italy. I worked as a front-end developer on a digital storytelling project — the final product was a longform piece of journalism enriched with videos, infographics and other interactive elements. D3.js was used for the infographics.",
+      "summary": "Internship with il “Gruppo Digitale l’Espresso” — one of the main
+                  publishers in Italy. I worked as a front-end developer on a digital
+                  storytelling project. The visual essay used interactive data visualisations
+                  (built in D3.js) to guide readers through the story and make data more accessible.",
       "highlights": []
     },
     {
