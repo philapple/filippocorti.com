@@ -3,29 +3,6 @@
 ---
 @charset "utf-8";
 
-
-@font-face {
-    font-family: 'Nitti Grotesk';
-    src: url('/assets/fonts/nitti/NittiGrotesk-Regular.eot');
-    src: url('/assets/fonts/nitti/NittiGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/nitti/NittiGrotesk-Regular.woff') format('woff'),
-         url('/assets/fonts/nitti/NittiGrotesk-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Nitti Grotesk';
-    src: url('/assets/fonts/nitti/NittiGrotesk-Bold.eot');
-    src: url('/assets/fonts/nitti/NittiGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
-         url('/assets/fonts/nitti/NittiGrotesk-Bold.woff') format('woff'),
-         url('/assets/fonts/nitti/NittiGrotesk-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
 // Colour scheme
 $main-text-color:         #424242;
 $link-color:              #00a071;
@@ -62,6 +39,7 @@ $secondary-font:       "Input Mono", "Courier", sans-serif;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "fonts",
         "gutenberg",
         "utilities",
         "atoms",
